@@ -1,0 +1,5 @@
+List:
+- {name: 'Home', url: '/'}
+- {name: 'Posts', url: '/posts'}
+- {name: 'Publications', url: '/publications'}
+- {name: 'RSS Feed', url: '/feed.xml' }
