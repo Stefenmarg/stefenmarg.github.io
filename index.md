@@ -1,5 +1,7 @@
 ---
 layout: home
+title: 'Home'
+permalink: /
 ---
 
 ### What is the purpose of this site:

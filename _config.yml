@@ -7,5 +7,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stefenmarg.github.io" # the base hostname & protocol for your site
 ownerProfilePicture: 'https://avatars.githubusercontent.com/u/145908944'
 
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title
+  projects:
+    output: true
+    permalink: /publications/:title
+
 # Build settings
 markdown: kramdown
