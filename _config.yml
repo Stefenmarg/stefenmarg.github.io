@@ -1,4 +1,6 @@
 # Site settings
+version: "1.0.2"
+
 title: Stefanos Margaritis
 email: stefenmarg@gmail.com
 description: 'It is a  professional portfolio, where I showcase my academic publications,  projects, insightful blog posts and a detailed curriculum vitae. This platform serves as a comprehensive overview of my contributions and achievements in Information technology. Available to explore are my research findings, innovative projects, and professional journey.'
@@ -13,7 +15,7 @@ collections:
     permalink: /publications/:title
   projects:
     output: true
-    permalink: /publications/:title
+    permalink: /projects/:title
 
 # Build settings
 markdown: kramdown
