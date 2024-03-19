@@ -45,7 +45,16 @@ $on-laptop:        800px;
 }
 
 .bottom {
-    border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.navigation {
+  display: contents;
+}
+
+.nav_buttons {
+  display: flex;
+  margin-top: 2%
 }
 
 .profilePicture {

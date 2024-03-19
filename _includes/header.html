@@ -1,15 +1,17 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      {% for item in site.data.menus.List %}
-        <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-      {% endfor %}
-    </nav>
-
+	<div class="wrapper">
+  		<div class="row bottom">
+        	<div class="column navigation site_title_s">
+        		<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        	</div>
+        	
+        	<div class="column navigation"> 
+        	    <nav class="nav_buttons">
+      				{% for item in site.data.menus.List %}
+        				<a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      				{% endfor %}
+    			</nav>
+        	</div>
+    	</div>
   </div>
-
 </header>
