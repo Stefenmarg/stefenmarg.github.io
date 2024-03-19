@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - Text for the purpose of the site.
  - A .gitignore file to leave out of the repo the cache files for jekyll building.
  - A limit of the 5 most recent posts to the home page.
+ - New categories: Publications, posts, projects.
 
 ### Changed
  - The way that social media accounts would get added to list
