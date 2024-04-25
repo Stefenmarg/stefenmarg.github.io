@@ -13,9 +13,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #424242;
-$brand-color:      #2a7ae2;
+$text-color:       #d6d6d6;
+$background-color: #2e2e2e;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -45,7 +44,18 @@ $on-laptop:        800px;
 }
 
 .bottom {
-    border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.navigation {
+  display: contents;
+}
+
+.nav_buttons {
+  display: flex;
+  margin-top: 2%;
+  margin: 1.6%;
+  overflow: auto;
 }
 
 .profilePicture {
@@ -58,6 +68,41 @@ $on-laptop:        800px;
     display: flex;
     justify-content: center;
 }
+
+.site-title {
+  color: #d6d6d6 !important;
+}
+// Custom css theme for making the colors better.
+body {
+  color: #d6d6d6 !important;
+  background-color: #2e2e2e !important;
+  font-family: "Gugi", sans-serif !important;
+}
+
+a {
+    color: #9e86c8 !important;
+    text-decoration: none;
+}
+a:visited {
+    color: #6c99bb !important;
+    text-decoration: none;
+}
+a:hover {
+  color: #9e86c8 !important;
+  text-decoration: underline !important;
+}
+a:visited:hover {
+    color: #6c99bb !important;
+    text-decoration: none;
+}
+
+.gugi-regular {
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 //
 
 // Use media queries like this:
