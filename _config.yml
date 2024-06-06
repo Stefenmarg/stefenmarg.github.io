@@ -21,6 +21,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title
+  changelog:
+    output: true
+    permalink: /changelog/:title
 
 # Build settings
 markdown: kramdown
