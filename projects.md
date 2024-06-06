@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-### This page here will be covering all the available and public projects released by me and/or other contributors.
+### In this page projects that I make and/or partake into will be covered.

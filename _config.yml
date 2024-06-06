@@ -1,13 +1,18 @@
 # Site settings
 version: "1.0.2"
+lastUpdate: "Friday 31st of May 2024"
 
 title: Stefanos Margaritis
 email: stefenmarg@gmail.com
+
 description: 'It is a  professional portfolio, where I showcase my academic publications,  projects, insightful blog posts and a detailed curriculum vitae. This platform serves as a comprehensive overview of my contributions and achievements in Information technology. Available to explore are my research findings, innovative projects, and professional journey.'
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://stefenmarg.github.io" # the base hostname & protocol for your site
-ownerProfilePicture: 'https://avatars.githubusercontent.com/u/145908944'
+siteMetadata: ''
+
+baseurl: "" 
+url: "https://stefenmarg.github.io"
+
+githubProfileAvatar: 'https://avatars.githubusercontent.com/u/145908944'
 
 collections:
   publications:

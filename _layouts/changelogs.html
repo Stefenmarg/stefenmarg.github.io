@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<div class="home">
-    <div class="bottom">
-        {{ content }}
-    </div>
-<div>
-    <ul class="post-list">
-        {% for post in site.projects%}
+<article class="post">
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <ul class="post-list">
+        {% for post in site.posts limit:15%}
             {% if post.isHidden == 'false'%}
                 <li>
                     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,4 +19,5 @@ layout: default
             {% endif %}
         {% endfor %}
     </ul>
-</div>
+
+</article>
