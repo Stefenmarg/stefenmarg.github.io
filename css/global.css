@@ -46,6 +46,11 @@ a:visited {
   align-items: center;
 }
 
+.title {
+  font-size: 175%;
+  margin-left: 5%;
+}
+
 .title-container {
   flex: 1 1 auto;
   min-width: 200px;
