@@ -1,5 +1,6 @@
 body {
   font-family: system-ui;
+  font-size: 1.15rem;
   background-color: #000000;
   color: #FFFFFF;
   margin-left: 13%;
@@ -47,7 +48,7 @@ a:visited {
 }
 
 .title {
-  font-size: 175%;
+  font-size: 2.15rem;
   margin-left: 5%;
 }
 
@@ -66,7 +67,7 @@ a:visited {
   color: #FFFFFF;
   margin-left: 10px;
   text-decoration: none;
-  font-size: medium;
+  font-size: 1.25rem;
 }
 
 .nav-links:visited {
