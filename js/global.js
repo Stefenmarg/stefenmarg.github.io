@@ -72,3 +72,8 @@ function toggleTheme() {
     let newMode = 1 - parseInt(getCookie("mode")) || 0;
     setMode(newMode);
 }
+
+const ThemeManager = (function() {
+
+    return {toggleTheme, SyncCookieTheme}
+})();
