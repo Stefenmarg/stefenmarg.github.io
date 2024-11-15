@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="">
-	<meta name="keywords" content="student portfolio, Stefanos Margaritis, Development, Coding">
-	<meta name="author" content="Stefanos Margaritis">
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <meta name="description" content="">
+    <meta name="keywords" content="student portfolio, Stefanos Margaritis, Development, Coding">
+    <meta name="author" content="Stefanos Margaritis">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
 
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Stefanos Margaritis",
-          "url": "https://www.stefenmarg.github.io",
-          "sameAs": [
-            "https://www.linkedin.com/in/stefenmarg",
-            "https://github.com/stefenmarg",
-            "https://x.com/stefenmarg"
-          ],
-          "jobTitle": "Undergraduate Student in Digital Systems",
-          "worksFor": {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stefanos Margaritis",
+            "url": "https://www.stefenmarg.github.io",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefenmarg",
+                "https://github.com/stefenmarg",
+                "https://x.com/stefenmarg"
+            ],
+            "jobTitle": "Undergraduate Student in Digital Systems",
+            "worksFor": {
                 "@type": "Organization",
                 "name": "University of Thessaly"
-           }
+            }
         }
     </script>
 
+    <script>
+        // Load theme as soon as the DOM is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            Web.ThemeManager().SyncCookieTheme();
+        });
+    </script>
 
-	<link rel="stylesheet" href="/css/global.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-	<script src="/js/global.js"></script> 
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="/js/global.bundle.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-4NCMDDS9PY');
     </script>
-    
-	<title>WordCamp Larisa 2024 | Stefanos M.</title>
-</head>
 
+    <title>WordCamp Larisa 2024 | Stefanos M.</title>
+</head>
 	<body class="Ribbon" id='Body'>
 		<div>
 			<div id="Header">
@@ -58,7 +67,7 @@
 			<i href="/"><h2 class="title">Stefanos M.</h2></i>
 		</div>
 		<div class="nav-container" id="NavigationPane">
-			<i class='fa-solid fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			<i class='fa-solid fa-sun hover-animate' onclick="Web.ThemeManager().toggleTheme()"></i>
 			
 				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
 			
