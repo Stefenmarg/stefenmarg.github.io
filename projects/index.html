@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
 
+    <!-- SEO optimisations for the site -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -32,18 +33,6 @@
         }
     </script>
 
-    <script>
-        // Load theme as soon as the DOM is ready
-        document.addEventListener("DOMContentLoaded", function () {
-            Web.ThemeManager().SyncCookieTheme();
-        });
-    </script>
-
-
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="/js/global.bundle.js"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
     <script>
@@ -56,6 +45,26 @@
         gtag('config', 'G-4NCMDDS9PY');
     </script>
 
+    <!-- The main JS file for the site -->
+    <script src="/js/global.bundle.js"></script>
+
+    <!-- The main file for the snow effect. -->
+    <script src="/js/snowstorm.js"></script>
+
+
+    <!-- Themes and other theme things -->
+    <script>
+        // Load theme as soon as the DOM is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            ThemeManager.SyncCookieTheme();
+            SnowManager.enableCheck(window);
+        });
+    </script>
+
+    <!-- CSS and styles -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <title>Projects | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
@@ -67,7 +76,9 @@
 			<i href="/"><h2 class="title">Stefanos M.</h2></i>
 		</div>
 		<div class="nav-container" id="NavigationPane">
-			<i class='fa-solid fa-sun hover-animate' onclick="Web.ThemeManager().toggleTheme()"></i>
+			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
+			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			
 			
 				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
 			
