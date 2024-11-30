@@ -1,0 +1,18 @@
+---
+layout: 'layouts/base.njk'
+---
+
+<div class="page" id="Page">
+
+	{{ page.title }}
+
+	{{ content }}
+
+	<h2> Most recent posts regarding my projects: </h2>
+	{% for post in collections.Projects limit:15 %}
+		<ul>
+			<li> On: {{post.date | date: "%a, %b %d, %y"}}, <a href="{{ post.url | url}}">{{ post.data.title }}</a> by: {{ site.author.name }}</li>
+		</ul>
+	{% endfor %}
+</div>
+

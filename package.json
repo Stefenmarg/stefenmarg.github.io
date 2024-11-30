@@ -1,0 +1,29 @@
+{
+  "name": "Stefenmarg.github.io",
+  "version": "2.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build:webpack": "npx webpack --config webpack.config.js",
+    "watch:webpack": "npx webpack -w --config webpack.config.js",
+
+    "build:eleventy": "eleventy",
+    "watch:eleventy": "eleventy --serve",
+
+    "start": "npm-run-all build:webpack --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "keywords": [],
+  "author": "Stefenmarg",
+  "license": "ISC",
+  "description": "My static site",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "dotenv": "^16.4.5",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^4.10.0"
+  }
+}

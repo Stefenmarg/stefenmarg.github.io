@@ -1,0 +1,11 @@
+[
+	{"icon": "fa-brands fa-github", "url": "https://github.com/stefenmarg"},
+
+	{"icon": "fa-brands fa-instagram", "url": "https://www.instagram.com/stefenmarg"}
+	,
+	{"icon": "fa-brands fa-twitter", "url": "https://x.com/stefenmarg"},
+
+	{"icon": "fa-brands fa-bluesky", "url": "https://bsky.app/profile/stefenmarg.bsky.social"},
+
+	{"icon": "fa-brands fa-linkedin", "url": "https://www.linkedin.com/in/stefenmarg"}
+]

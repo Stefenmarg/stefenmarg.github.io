@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="student portfolio, Stefanos Margaritis, Development, Coding">
+    <meta name="author" content="Stefanos Margaritis">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+
+    <!-- SEO optimisations for the site -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stefanos Margaritis",
+            "url": "https://www.stefenmarg.github.io",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefenmarg",
+                "https://github.com/stefenmarg",
+                "https://x.com/stefenmarg"
+            ],
+            "jobTitle": "Undergraduate Student in Digital Systems",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "University of Thessaly"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-4NCMDDS9PY');
+    </script>
+
+    <!-- The main JS file for the site -->
+    <script src="/js/global.bundle.js"></script>
+
+    <!-- The main file for the snow effect. -->
+    <script src="/js/snowstorm.js"></script>
+
+
+    <!-- Themes and other theme things -->
+    <script>
+        // Load theme as soon as the DOM is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            ThemeManager.SyncCookieTheme();
+            SnowManager.enableCheck();
+        });
+    </script>
+
+    <!-- CSS and styles -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
+    
+
+    <title>My experience with 11ty as a static site generator. | Stefanos M.</title>
+</head>
+	<body class="Ribbon" id='Body'>
+		<div>
+			<div id="Header">
+				<header>
+	<div class="container">
+		<div class="title-container" id="Title">
+			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+		</div>
+		<div class="nav-container" id="NavigationPane">
+			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
+			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			
+			
+				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/versions/"><i class="hover-animate"> Versions </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/about/"><i class="hover-animate"> About me </i></a>
+			
+			
+		</div>
+	</div>
+</header>
+
+			</div>
+
+			<div class="seperator" id="Content">
+				<h2>My experience with 11ty as a static site generator.</h2>
+<p>TL:DR It was amazing, so many posibilities, no issues to deal with during the upload process.</p>
+<p>One question would be &quot;Why did I choose to re-write my site (again)&quot; and the answer would be that I didn't like the previous site looked, the green and the tones of the last one made me think that it was a bit too much for a portfolio.</p>
+<p>But, now with a WordPress event that is happening on the 9th of November that i will be attending and one of  the event's topics including web development, I decided try and re-write it. When trying to start the re-write i had some issues with jekyll (the static site generators i used for my sites before 11ty), I decided to try a diffrent generator and I'm very thankful I did.</p>
+<p>This site was built in just 4 days; 2 of which were planning and testing the capabilities of the generator and the other 2 where where to build the site as you see it as per 2024-10-20. I need to mention that I didn't put 100% of my free time into building the site BUT on average I spent ~4.5 hours every day since I had to care to my university's lessons.</p>
+<p>Overall some hard parts of the site development process were the cookie managment for the site to remember whether you liked the white theme or the dark theme and the sorting for the posts. I just didn't manage to completely uderstand how the feed.xml works in 11ty, so for the time being  have decided to not include it into the releases until i feel it has reached a pont where it is trustworthy.</p>
+<p>Last part of the development process that I was waiting to completely mess things up was the 'git push' of the new code to the repository. 'Did it mess things up?', strangely no; it workd perfectly, no linking issues, no css issues, no js issues, no cookie issues and generaly no issues.</p>
+<p>Overall, I have to say that the development process of this new version of the site was amazing, I had minimall issues that were caused by user error and not reading that much documentiation. If I where to recomend a static ste generator, i would 100% recomend 11ty whose links are in the home page, in the build details.</p>
+<p>Thanks for reading (hopefully this is the last re-write that you will read for the next 3+ months),</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
+
+			</div>
+
+			<div class="seperator" id="Footer">
+				<footer>
+	<div class="cst_nav center" id="SocialsPane">
+		<nav>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://x.com/stefenmarg"><i class="fa-brands fa-twitter hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
+			
+		</nav>
+	</div>	
+	<div class="center Copyright" id="Copyright">
+		Copyright © 2024 Stefanos Margaritis. All rights reserved.
+	</div>
+</footer>
+
+
+			</div>
+		</div>
+	</body>
+</html>

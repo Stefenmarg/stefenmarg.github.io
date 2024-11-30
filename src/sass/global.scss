@@ -1,0 +1,116 @@
+$Error: #CF6679;
+$Ribbon: #CF6679;
+$Text: #FFFFFF;
+$Urls: #8d2c3e;
+$UrlsVisited: #CF6679;
+$Background: #000000;
+
+$MarginLR: 13%;
+$RibbonWidth: 8px;
+
+$TextRem: 1.15rem;
+$TitleRem: 2.15rem;
+$NavigationRem: 1.25rem;
+
+body {
+	font-family: system-ui;
+	font-size: $TextRem;
+
+	background-color: $Background;
+	color: $Text;
+
+	margin-left: $MarginLR;
+	margin-right: $MarginLR;
+}
+
+a {
+	color: $Urls;
+}
+
+a:visited {
+	color: $UrlsVisited;
+}
+
+.Copyright {
+	font-size: small;
+}
+
+.Ribbon {
+	border-top-style: solid;
+	border-top-width: $RibbonWidth;
+	border-top-color: $Ribbon;
+	margin-top: auto;
+}
+
+.seperator {
+	border-top: dotted;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px;
+	display: flex;
+	width: fit-content;
+}
+
+/*ALL OF THE NAVIGATION CSS*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-size: $TitleRem;
+	margin-left: 5%;
+}
+
+.title-container {
+	flex: 1 1 auto;
+	min-width: 200px;
+}
+
+.nav-container {
+	flex: 1 1 auto;
+	min-width: 200px;
+	text-align: right;
+	margin-bottom: 2.5%;
+}
+
+.icons {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.nav-links {
+	color: $Text;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: $NavigationRem;
+}
+.nav-links:visited {
+	color: $Text;
+}
+
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column; 
+		align-items: flex-start;
+	}
+	.nav-container {
+		text-align: left;
+	}
+}
+
+.hover-animate {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.hover-animate:hover {
+    transform: scale(1.2); /* Slightly scale up the icon */
+    color: $Ribbon; /* Change to a highlight color on hover */
+    cursor: pointer;
+}

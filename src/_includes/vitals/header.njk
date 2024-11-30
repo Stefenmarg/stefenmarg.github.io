@@ -1,0 +1,16 @@
+<header>
+	<div class="container">
+		<div class="title-container" id="Title">
+			<i href="/"><h2 class="title">{{ site.title }}</h2></i>
+		</div>
+		<div class="nav-container" id="NavigationPane">
+			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
+			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			
+			{% for item in navigation %}
+				<a id="NavigationEntry" class="nav-links" href="{{item.url}}"><i class="hover-animate"> {{item.name | url}} </i></a>
+			{% endfor %}
+			
+		</div>
+	</div>
+</header>
