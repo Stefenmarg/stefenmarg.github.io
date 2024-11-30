@@ -5,10 +5,8 @@
   "scripts": {
     "build:webpack": "npx webpack --config webpack.config.js",
     "watch:webpack": "npx webpack -w --config webpack.config.js",
-
     "build:eleventy": "eleventy",
     "watch:eleventy": "eleventy --serve",
-
     "start": "npm-run-all build:webpack --parallel watch:*",
     "build": "npm-run-all build:*"
   },
@@ -18,6 +16,7 @@
   "description": "My static site",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "babel-loader": "^9.2.1",
