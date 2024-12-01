@@ -3,7 +3,7 @@ CookieManager = require("./Cookies.js");
 export function enableCheck() {
 	const date = new Date();
 
-    if ((date.getMonth() == 11 && date.getDate() >= 10) || (date.getMonth() == 0 && date.getDate() <= 10)) {
+    if ((date.getMonth() == 11 && date.getDate() >= 1) || (date.getMonth() == 0 && date.getDate() <= 10)) {
         const SnowFlakeButton = document.getElementById("snowFlakeButton")
         SnowFlakeButton.classList.add('fa-regular');
         SnowFlakeButton.classList.add('fa-snowflake');
