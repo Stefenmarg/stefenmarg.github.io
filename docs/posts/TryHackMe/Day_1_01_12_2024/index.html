@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Code 2024 - Day 1 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,32 +98,22 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Code 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<h2>Advent of Code 2024 - Day 1</h2>
+<h3>Topic Covered: Operational Security (OPSEC)</h3>
+<p>Okay, I didn't like the MP3 download site before the challenge but now i hate them more!</p>
+<p>The challenge started with starting the machine and going to a site that was hosted on it that was a youtube to MP3 converter. Then uppon going to the site (and <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">getting rickrolled live</a>) in the instructions, we were instructed to submit the link and download a .zip file!</p>
+<p>After the download finished and unzipping the archive was done we were instructed to use the <code>file</code> command to get the data off the files that we had just unzipped:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">file</span> ./song.mp3 <span class="token comment">#Returned usual song file data.</span>
+<span class="token function">file</span> ./somg.mp3 <span class="token comment">#Returned info for .lnk file.</span></code></pre>
+<p>Wouldn't you know it, <code>somg.mp3</code> was a malicious file after all, it launched a powershell, downloaded a crypto stealer script, executed it hidden to the user and simply then uploaded the stolen data to a C2 bucket.</p>
+<p>Exciting HUH?</p>
+<p>Then all we had to do was trace down the file to an issues thread in github based on the link in the script that downloaded the payload and boom we caught MayorMalware red handed!</p>
+<p>Uppon submission of all the data gathered and the amount of commits that were in the initial repository, you were able to complete Day 1!</p>
+<p>Very excited for Day 2!</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
