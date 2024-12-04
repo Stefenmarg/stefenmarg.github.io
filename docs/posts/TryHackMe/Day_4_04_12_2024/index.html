@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Advent of Cyber 2024 - Day 1 | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 4 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -84,6 +84,8 @@
 			
 				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
 			
+				<a id="NavigationEntry" class="nav-links" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
+			
 				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
 			
 				<a id="NavigationEntry" class="nav-links" href="/versions/"><i class="hover-animate"> Versions </i></a>
@@ -98,18 +100,15 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>Advent of Cyber 2024 - Day 1</h2>
-<h3>Topic Covered: Operational Security (OPSEC)</h3>
-<p>Okay, I didn't like the MP3 download site before the challenge but now i hate them more!</p>
-<p>The challenge started with starting the machine and going to a site that was hosted on it that was a youtube to MP3 converter. Then uppon going to the site (and <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">getting rickrolled live</a>) in the instructions, we were instructed to submit the link and download a .zip file!</p>
-<p>After the download finished and unzipping the archive was done we were instructed to use the <code>file</code> command to get the data off the files that we had just unzipped:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">file</span> ./song.mp3 <span class="token comment">#Returned usual song file data.</span>
-<span class="token function">file</span> ./somg.mp3 <span class="token comment">#Returned info for .lnk file.</span></code></pre>
-<p>Wouldn't you know it, <code>somg.mp3</code> was a malicious file after all, it launched a powershell, downloaded a crypto stealer script, executed it hidden to the user and simply then uploaded the stolen data to a C2 bucket.</p>
-<p>Exciting HUH?</p>
-<p>Then all we had to do was trace down the file to an issues thread in github based on the link in the script that downloaded the payload and boom we caught MayorMalware red handed!</p>
-<p>Uppon submission of all the data gathered and the amount of commits that were in the initial repository, you were able to complete Day 1!</p>
-<p>Very excited for Day 2!</p>
+				<h2>Advent of Cyber 2024 - Day 4</h2>
+<h3>Topic Covered: Atomic Red Team</h3>
+<p>It was a hard one!</p>
+<p>We got introduced to Atomic Red, a library of test cases that blue teams can use to detect gaps and close them, we were also provided with some plags for the program that would be usefull to finish the tasks below.</p>
+<p>Some of the tasks were easy since Task1 was to go to a file and read the contents of .txt file (wierdly enough the notepad.exe program was unresponcive on that vm so i had to use either Wordpad or in the cmd prompt the type command if i wanted to read a file)</p>
+<p>Task 2 &amp; 3 involved googling a technique based on a term given</p>
+<pre class="language-text"><code class="language-text">a command and scripting interpreter</code></pre>
+<p>which would lead to a specific Atomic Technique and a Sub techique for which later we had to find a specific Atomic Test and from that with the details given we had to find it's name. From all of the above finally we had to run the test which would lead to saving a pdf that contained the final task's flag.</p>
+<p>Now that I write about this, it does not seem that complicated but from the dents in the wall from banging my head to find the names say otherwise.</p>
 <p>Thanks a lot for reading!</p>
 <ul>
 <li>Stefanos M.</li>

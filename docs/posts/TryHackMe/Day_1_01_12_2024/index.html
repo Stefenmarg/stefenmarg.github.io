@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Advent of Cyber 2024 - Day 2 | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 1 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -84,6 +84,8 @@
 			
 				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
 			
+				<a id="NavigationEntry" class="nav-links" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
+			
 				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
 			
 				<a id="NavigationEntry" class="nav-links" href="/versions/"><i class="hover-animate"> Versions </i></a>
@@ -98,20 +100,18 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>Advent of Cyber 2024 - Day 2</h2>
-<h3>Topic Covered: Log Analysis</h3>
-<p>This Challenge we were given access to a platform with A LOT of logs, our jobs were filter and harvest information from those logs.</p>
-<p>First thing that struck the eye was the strange powershell code that was run on some machines and one of the things that alerted me was this:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token string">"SQBuAHMAdABhAGwAbAAtAFcAaQBuAGQAbwB3AHMAVQBwAGQAYQB0AGUAIAAtAEEAYwBjAGUAcAB0AEEAbABsACAALQBBAHUAdABvAFIAZQBiAG8AbwB0AA=="</span></code></pre>
-<p>What this is can be found very easily. One of the things that you learn when watching videos online about infostealers is to recognise (and always assume) Base64, and wouldn't you know it decoding it gives us:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"SQBuAHMAdABhAGwAbAAtAFcAaQBuAGQAbwB3AHMAVQBwAGQAYQB0AGUAIAAtAEEAYwBjAGUAcAB0AEEAbABsACAALQBBAHUAdABvAFIAZQBiAG8AbwB0AA=="</span> <span class="token operator">|</span> base64 <span class="token parameter variable">-d</span> 
-Install-WindowsUpdate <span class="token parameter variable">-AcceptAll</span> <span class="token parameter variable">-AutoReboot</span></code></pre>
-<p>Not what I expected but Task 5 is one (prematurely but done)!</p>
-<p>Now resuming to the platform and setting up the recomended filters you are able to see who is causing the authentication failures.</p>
-<p>Updating the filter you are also available to see when the ADM-01 account logged in first time and the ip address of the log in thus Tasks 3 &amp; 4 are done!</p>
-<p>Now, broadening the check period for the request and adding the autherntication plus the failed filters you are able to see the total failed login attemps and if you sort the list in such a way you will be able to find what user.name was causing the most failed login attempts; thus Tasks 1 &amp; 2 are done!</p>
-<p>These were the steps followed to complete Day 2 of AoC (<s>Even though it took me about a 1:15 hrs to complete it myself but on my defense i am using a notebook</s>).</p>
-<p>Can't wait for the challenge of Day 3!!</p>
+				<h2>Advent of Cyber 2024 - Day 1</h2>
+<h3>Topic Covered: Operational Security (OPSEC)</h3>
+<p>Okay, I didn't like the MP3 download site before the challenge but now i hate them more!</p>
+<p>The challenge started with starting the machine and going to a site that was hosted on it that was a youtube to MP3 converter. Then uppon going to the site (and <a href="https://youtube.com/watch?v=dQw4w9WgXcQ">getting rickrolled live</a>) in the instructions, we were instructed to submit the link and download a .zip file!</p>
+<p>After the download finished and unzipping the archive was done we were instructed to use the <code>file</code> command to get the data off the files that we had just unzipped:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">file</span> ./song.mp3 <span class="token comment">#Returned usual song file data.</span>
+<span class="token function">file</span> ./somg.mp3 <span class="token comment">#Returned info for .lnk file.</span></code></pre>
+<p>Wouldn't you know it, <code>somg.mp3</code> was a malicious file after all, it launched a powershell, downloaded a crypto stealer script, executed it hidden to the user and simply then uploaded the stolen data to a C2 bucket.</p>
+<p>Exciting HUH?</p>
+<p>Then all we had to do was trace down the file to an issues thread in github based on the link in the script that downloaded the payload and boom we caught MayorMalware red handed!</p>
+<p>Uppon submission of all the data gathered and the amount of commits that were in the initial repository, you were able to complete Day 1!</p>
+<p>Very excited for Day 2!</p>
 <p>Thanks a lot for reading!</p>
 <ul>
 <li>Stefanos M.</li>

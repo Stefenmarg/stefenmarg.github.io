@@ -14,9 +14,4 @@ Since I had an account there I thought it would be a great change to dive into t
 So far I am loving this set of challenges! 
 (Solutions to the challenges <i>may</i> be released after January 1st; if they are released they will be inside the respective post.)
 
-<h2> Posts about Advent of Cyber 2024: </h2>
-{% for post in collections.AoC24 %}
-	<ul>
-		<li> On: {{post.date | date: "%a, %b %d, %y"}}, <a href="{{ post.url | url}}">{{ post.data.title }}</a> by: {{ site.author.name }}</li>
-		</ul>
-{% endfor %}
+Since a new section for TryHackMe was creaed you can now see all the posts regarding AoC 2024 [here!](https://stefenmarg.github.io/thm)

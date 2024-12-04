@@ -1,0 +1,16 @@
+---
+layout: 'layouts/base.njk'
+---
+
+<div class="page" id="Page">
+
+	{{ content }}
+
+	<h2> Most recent posts regarding TryHackMe: </h2>
+	{% for post in collections.TryHackMe %}
+		<ul>
+			<li> On: {{post.date | date: "%a, %b %d, %y"}}, <a href="{{ post.url | url}}">{{ post.data.title }}</a> by: {{ site.author.name }}</li>
+		</ul>
+	{% endfor %}
+</div>
+
