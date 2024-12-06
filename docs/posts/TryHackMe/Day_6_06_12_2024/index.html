@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 6 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,45 +98,17 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img class="imgbox" src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="Your Image Badge">
-    </a>
-</div>
-
-	<h2> Most recent posts regarding TryHackMe: </h2>
-	
-		<ul>
-			<li> On: Fri, Dec 06, 24, <a href="/posts/TryHackMe/Day_6_06_12_2024/">Advent of Cyber 2024 - Day 6</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Thu, Dec 05, 24, <a href="/posts/TryHackMe/Day_5_05_12_2024/">Advent of Cyber 2024 - Day 5</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Mon, Dec 02, 24, <a href="/posts/TryHackMe/Day_2_02_12_2024/">Advent of Cyber 2024 - Day 2</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/TryHackMe/Day_1_01_12_2024/">Advent of Cyber 2024 - Day 1</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<h2>Advent of Cyber 2024 - Day 6</h2>
+<h3>Topic Covered: Sandboxes</h3>
+<p>There are malware out there that are able to run only on real machines and I've never relly wondered on how that was done; until today where the challenge showcased some code snippetes in C that was able to recognise wether a machine was a VM or not simply based on some registry keys.</p>
+<p>Additionally, new tools were used today! First was Yara an EDR system that can identify and classify malware based on custom rules that helps detect malicious code; and  then there is FLOSS that is a tool that extracts obfiscated strings from malware binaries with similar functionality to the strings command that can be found on unix systems.</p>
+<p>For the first task all you need to do is while running Yara run at the same time that malware 'MerryChristmas.exe' and after that you'll be getting a popup with the 1st flag</p>
+<p>For the second task you will need to simply provide to floss.exe the above mentioned malware file and then find the hidden flag.</p>
+<p>Today's challenge as a bit easy but that means tomorrow's is gonna be very fun!
+Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
