@@ -77,13 +77,13 @@ body {
 }
  .hover-animate {
 	 transition: transform 0.3s ease, color 0.3s ease;
-	/* Smooth transition */
 }
  .hover-animate:hover {
 	 transform: scale(1.2);
-	/* Slightly scale up the icon */
 	 color: #cf6679;
-	/* Change to a highlight color on hover */
 	 cursor: pointer;
 }
- 
+
+.imgbox {
+	width: 95%;
+}
