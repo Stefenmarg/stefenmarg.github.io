@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
     
     //Files to copy to the destination without processing
 	eleventyConfig.addPassthroughCopy('./src/assets');
-    eleventyConfig.addPassthroughCopy('./src/css');
     eleventyConfig.addPassthroughCopy('./src/js/snowstorm.js');
 
     //Watch for any file change 
