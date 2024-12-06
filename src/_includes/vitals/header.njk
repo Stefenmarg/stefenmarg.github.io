@@ -8,7 +8,7 @@
 			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
 			
 			{% for item in navigation %}
-				<a id="NavigationEntry" class="nav-links" href="{{item.url}}"><i class="hover-animate"> {{item.name | url}} </i></a>
+				<a id="NavigationEntry" class="nav-links" href="{{ baseurl }}{{item.url}}"><i class="hover-animate"> {{item.name | url}} </i></a>
 			{% endfor %}
 			
 		</div>

@@ -5,7 +5,5 @@
 	
 	{"name": "Projects", "url": "/projects/"},
 	
-	{"name": "Versions", "url": "/versions/"},
-	
 	{"name": "About me", "url": "/about/"}
 ]
