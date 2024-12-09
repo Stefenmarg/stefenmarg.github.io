@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 
 pagination:
   data: collections.TryHackMe
-  size: 5
+  size: 7
   alias: posts
 ---
 
