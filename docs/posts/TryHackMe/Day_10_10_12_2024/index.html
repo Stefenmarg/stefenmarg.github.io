@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 10 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,40 +98,19 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img class="imgbox" src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="Your Image Badge">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Tue, Dec 10, 24, <a href="/posts/TryHackMe/Day_10_10_12_2024/">Advent of Cyber 2024 - Day 10</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Mon, Dec 09, 24, <a href="/posts/TryHackMe/Day_9_09_12_2024/">Advent of Cyber 2024 - Day 9</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sun, Dec 08, 24, <a href="/posts/TryHackMe/Day_8_08_12_2024/">Advent of Cyber 2024 - Day 8</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sat, Dec 07, 24, <a href="/posts/TryHackMe/Day_7_07_12_2024/">Advent of Cyber 2024 - Day 7</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Fri, Dec 06, 24, <a href="/posts/TryHackMe/Day_6_06_12_2024/">Advent of Cyber 2024 - Day 6</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Thu, Dec 05, 24, <a href="/posts/TryHackMe/Day_5_05_12_2024/">Advent of Cyber 2024 - Day 5</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="next" href="/thm/1/">Older posts</a></p>
-</div>
+				<h2>Advent of Cyber 2024 - Day 10</h2>
+<h3>Topic Covered Day 10: Phishing</h3>
+<p><img src="/assets/Screenshots/Screenshot_email_phishing.png" alt="A snippet of an email sent as a phishing attempt on Day 10's challenge"></p>
+<p>Marta is going to lose her job if she keeps opening malicious documents. Leaving Marta's need to find a new job aside, today was one of the best days of Advent of Cyber 2024. Not only we generated a malicious macro in a word file, embedded it into the file's comments, read the comment, decrypted it and run it but we also got to do some socal engeneering.</p>
+<p>All of the above were done with the command line tool <code>msfconsole</code> by <a href="https://www.metasploit.com/">Metasploit</a>; Kudos to them for supporting i386 linux systems!</p>
+<p>For finding the flag.txt for Task 1 on the attack machine, we opened the terminal and typed the commands provided by the THM behind this day's challenge as to create the malicious file. Then on the same terminal (optionally) we would start with <code>msfconsole</code> a listenning service at port 8888 for the reverse shell created by the malicious word file.</p>
+<p>When navigating at the ip of the VM (Not the attack box) we would be greeted with a portal for an email service for which we were given credentials to log into by the one and only M.M. After the successfull login we were to email our poor Marta with with the malicious file renamed to either reciept or invoice.</p>
+<p>After about a minute max, we would be getting back a reply from Marta with the flag!</p>
+<p>I really really hope they dont read the emails sent by the end userd cause youch. Can wait for Day 11!
+Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
