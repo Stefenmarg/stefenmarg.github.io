@@ -15,6 +15,7 @@ permalink: /feed.xml
             <item>
                 <title>{{ post.data.title }}</title>
                 <link>{{ url }}{{ baseurl }}{{ post.url }}</link>
+                <description> {{ post.content }} </description>
                 <pubDate>{{ post.date | dateToRfc2822 }}</pubDate>
                 <guid>{{ url }}{{ baseurl }}{{ post.url }}</guid>
             </item>

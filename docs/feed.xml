@@ -12,6 +12,13 @@
             <item>
                 <title>Advent of Cyber 2024 By TryHackMe</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-12-01-Advent-of-Cyber/</link>
+                <description> &lt;h2&gt;Advent of Cyber &#39;24&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://tryhackme.com/r/room/adventofcyber2024&quot;&gt;Advent of Cyber&lt;/a&gt; is a christmas event organised by the TryHackMe team that releases every day at &lt;code&gt;6PM GMT(UTC+0)&lt;/code&gt; a new and exciting challenge until &lt;code&gt;December 31st&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;Since I had an account there I thought it would be a great change to dive into the Cybersecurity part of the internet for a taste since so far I have only done programming and electronics. Plus uppon 100% completion I&#39;ll be getting a badge AND a certificate!&lt;/p&gt;
+&lt;p&gt;So far I am loving this set of challenges!
+(Solutions to the challenges &lt;i&gt;may&lt;/i&gt; be released after January 1st; if they are released they will be inside the respective post.)&lt;/p&gt;
+&lt;p&gt;Since a new section for TryHackMe was created you can now see all the posts regarding AoC 2024 &lt;a href=&quot;https://stefenmarg.github.io/thm&quot;&gt;here!&lt;/a&gt;&lt;/p&gt;
+ </description>
                 <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
                 <guid>https://stefenmarg.github.io/posts/Blog/2024-12-01-Advent-of-Cyber/</guid>
             </item>
@@ -19,6 +26,18 @@
             <item>
                 <title>WordCamp Larisa 2024</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-11-09-WordCamp-Larisa-2024/</link>
+                <description> &lt;h2&gt;WordCamp Larisa 2024&lt;/h2&gt;
+&lt;p&gt;WordCamp Larisa 2024 happend, pretty amazing event not gonna lie!&lt;/p&gt;
+&lt;p&gt;There were very interesting topics covered, from personal/company branding, to marketing, to forking (&lt;i class=&quot;fa-solid fa-code-fork&quot;&gt;&lt;/i&gt;) the GPL way and even making user&#39;s search experience better. All the presentations were amazing and the topics that were covered were so interesting that i lost track of time; talks that were supposed to be 30-45 minutes long felt to be 15 minutes long.&lt;/p&gt;
+&lt;p&gt;On arrivng at Joist we were given our badges and a bundle of gifts (An event themed bag, T-Shirts, pens, a squeeze ball, mousepads, coupons and most importantly stickers) for which im very greatfull. After getting the gifts, we got right infront of the sponsors&#39; den in which companies had stands and some of them even had giveaways. All the companies were offering a great amount of services around hosting, domains (very tempted to buy then and there a domain for the site not gonna lie), marketing, eCommerce, website design and more.&lt;/p&gt;
+&lt;p&gt;I mostly attended the presentations on Track 1 and not that many workshops since the topics covered were a bit more interesting than the workshops. Overall, the event was amazing and i feel very lucky to have been there, meeting new people and unlocking new opportunities.&lt;/p&gt;
+&lt;p&gt;Next event im attending is: Game Developer&#39;s Meetup, 2024-11-16.&lt;/p&gt;
+&lt;p&gt;Contextual update: Sadly, I was not able to attend &#39;Game Developer&#39;s Meetup&#39; due to the fact that I got sick ;-;&lt;/p&gt;
+&lt;p&gt;Thanks a lot for reading!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stefanos M.&lt;/li&gt;
+&lt;/ul&gt;
+ </description>
                 <pubDate>Sat, 09 Nov 2024 00:00:00 GMT</pubDate>
                 <guid>https://stefenmarg.github.io/posts/Blog/2024-11-09-WordCamp-Larisa-2024/</guid>
             </item>
@@ -26,6 +45,19 @@
             <item>
                 <title>My experience with 11ty as a static site generator.</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-10-27-Rewrite-in-11ty/</link>
+                <description> &lt;h2&gt;My experience with 11ty as a static site generator.&lt;/h2&gt;
+&lt;p&gt;TL:DR It was amazing, so many posibilities, no issues to deal with during the upload process.&lt;/p&gt;
+&lt;p&gt;One question would be &amp;quot;Why did I choose to re-write my site (again)&amp;quot; and the answer would be that I didn&#39;t like the previous site looked, the green and the tones of the last one made me think that it was a bit too much for a portfolio.&lt;/p&gt;
+&lt;p&gt;But, now with a WordPress event that is happening on the 9th of November that i will be attending and one of  the event&#39;s topics including web development, I decided try and re-write it. When trying to start the re-write i had some issues with jekyll (the static site generators i used for my sites before 11ty), I decided to try a diffrent generator and I&#39;m very thankful I did.&lt;/p&gt;
+&lt;p&gt;This site was built in just 4 days; 2 of which were planning and testing the capabilities of the generator and the other 2 where where to build the site as you see it as per 2024-10-20. I need to mention that I didn&#39;t put 100% of my free time into building the site BUT on average I spent ~4.5 hours every day since I had to care to my university&#39;s lessons.&lt;/p&gt;
+&lt;p&gt;Overall some hard parts of the site development process were the cookie managment for the site to remember whether you liked the white theme or the dark theme and the sorting for the posts. I just didn&#39;t manage to completely uderstand how the feed.xml works in 11ty, so for the time being  have decided to not include it into the releases until i feel it has reached a pont where it is trustworthy.&lt;/p&gt;
+&lt;p&gt;Last part of the development process that I was waiting to completely mess things up was the &#39;git push&#39; of the new code to the repository. &#39;Did it mess things up?&#39;, strangely no; it workd perfectly, no linking issues, no css issues, no js issues, no cookie issues and generaly no issues.&lt;/p&gt;
+&lt;p&gt;Overall, I have to say that the development process of this new version of the site was amazing, I had minimall issues that were caused by user error and not reading that much documentiation. If I where to recomend a static ste generator, i would 100% recomend 11ty whose links are in the home page, in the build details.&lt;/p&gt;
+&lt;p&gt;Thanks for reading (hopefully this is the last re-write that you will read for the next 3+ months),&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stefanos M.&lt;/li&gt;
+&lt;/ul&gt;
+ </description>
                 <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
                 <guid>https://stefenmarg.github.io/posts/Blog/2024-10-27-Rewrite-in-11ty/</guid>
             </item>
