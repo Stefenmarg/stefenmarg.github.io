@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Stefanos M.</title>
+        <link>https://stefenmarg.github.io</link>
+        <description>stefenmarg.github.io is a personal portfolio site to showcase my projects.</description>
+        <language>en</language>
+
+        <atom:link href="https://stefenmarg.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+
+        
+            <item>
+                <title>Advent of Cyber 2024 By TryHackMe</title>
+                <link>https://stefenmarg.github.io/posts/Blog/2024-12-01-Advent-of-Cyber/</link>
+                <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+                <guid>https://stefenmarg.github.io/posts/Blog/2024-12-01-Advent-of-Cyber/</guid>
+            </item>
+        
+            <item>
+                <title>WordCamp Larisa 2024</title>
+                <link>https://stefenmarg.github.io/posts/Blog/2024-11-09-WordCamp-Larisa-2024/</link>
+                <pubDate>Sat, 09 Nov 2024 00:00:00 GMT</pubDate>
+                <guid>https://stefenmarg.github.io/posts/Blog/2024-11-09-WordCamp-Larisa-2024/</guid>
+            </item>
+        
+            <item>
+                <title>My experience with 11ty as a static site generator.</title>
+                <link>https://stefenmarg.github.io/posts/Blog/2024-10-27-Rewrite-in-11ty/</link>
+                <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
+                <guid>https://stefenmarg.github.io/posts/Blog/2024-10-27-Rewrite-in-11ty/</guid>
+            </item>
+        
+    </channel>
+</rss>

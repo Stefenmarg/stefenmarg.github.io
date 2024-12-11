@@ -1,16 +1,18 @@
 {
 	"title": "Stefanos M.",
 
+	"description": "stefenmarg.github.io is a personal portfolio site to showcase my projects.",
+
 	"author": {
 		"username": "Stefenmarg",
 		"name": "Stefanos Margaritis",
 
-		"email": "stefenmarg@gmail.com",
-
-		"description": "stefenmarg.github.io is a personal portfolio site to showcase my projects."
+		"email": "stefenmarg@gmail.com"
 	},
 	
 	"metadata": "student portfolio, Stefanos Margaritis, Development, Coding",
 	
-	"github_pages": "https://www.stefenmarg.github.io"
+	"link": "https://www.stefenmarg.github.io",
+
+	"language":"en"
 }
