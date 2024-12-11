@@ -14,7 +14,7 @@ In this section posts about my activity on TryHackMe will be posted. Im new to t
 
 <div class="center">
     <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img class="imgbox" src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="Your Image Badge">
+    <img src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="My image badge on tryhackme.com">
     </a>
 </div>
 
