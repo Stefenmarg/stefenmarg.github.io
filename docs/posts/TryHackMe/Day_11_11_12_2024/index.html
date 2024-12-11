@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 11 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,31 +98,28 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img class="imgbox" src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="Your Image Badge">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Mon, Dec 02, 24, <a href="/posts/TryHackMe/Day_2_02_12_2024/">Advent of Cyber 2024 - Day 2</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sun, Dec 01, 24, <a href="/posts/TryHackMe/Day_1_01_12_2024/">Advent of Cyber 2024 - Day 1</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="previous" href="/thm/">Newer posts</a></p>
-</div>
+				<h2>Advent of Cyber 2024 - Day 11</h2>
+<h3>Topic Covered Day 11: Wi-Fi Attacks</h3>
+<p>Todays lesson involed ssh-ing into ✨ the glitch's✨ machine.</p>
+<p>Wi-Fi Attacks are not my cup of tea as i have learned today but the challenge was good, I cannot complain.</p>
+<p>First we had to see information about the wireless interface with the use of the <code>iw dev</code> command (data here is an exaple and does not represent actual data of the challenge).</p>
+<pre class="language-bash"><code class="language-bash">~ $ iw dev
+phy<span class="token comment">#0</span>
+	Interface wls1
+		ifindex <span class="token number">3</span>
+		wdev 0x1
+		addr 00:24:48:8c:71:1a
+		ssid Server-AP
+		<span class="token builtin class-name">type</span> managed</code></pre>
+<p>The addr is the mac address of the NIC that the ssh machine has so Task 1 done. After that, we had to scan all available Wi-Fi Access Points using our wireless interface (with the above command on the ssh machine you would get it's interface name that you would put instead of wls1) by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token function">sudo</span> iw dev wls1 scan</code></pre>
+<p>which would get us a nice list of names and other information about the wifi APs, then you would need to find the AP of our interest and with it's SSID and it's BSSID you would have successfully finished Task 2.</p>
+<p>After following the rest of the instruction on the use of <code>airodump-ng</code>, <code>aireplay-ng</code> and 'aircrack-ng' you would have successfullty finished Task 3 too!</p>
+<p>It was a good first dive into Wi-Fi attacks, prety enjoyable! Lets see what Day 12 brings for us!!</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
