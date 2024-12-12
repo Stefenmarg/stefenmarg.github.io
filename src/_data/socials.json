@@ -5,5 +5,7 @@
 
 	{"icon": "fa-brands fa-bluesky", "url": "https://bsky.app/profile/stefenmarg.bsky.social"},
 
-	{"icon": "fa-brands fa-linkedin", "url": "https://www.linkedin.com/in/stefenmarg"}
+	{"icon": "fa-brands fa-linkedin", "url": "https://www.linkedin.com/in/stefenmarg"},
+
+	{"icon": "fa-solid fa-rss", "url": "https://stefenmarg.github.io/feed.xml"}
 ]
