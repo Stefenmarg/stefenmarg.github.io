@@ -3,8 +3,8 @@
   "version": "2.0.1",
   "main": "index.js",
   "scripts": {
-    "build_prod:sass": "sass ./src/scss/global.scss ./docs/css/global.css --style=compressed",
-    "watch_dev:sass": "sass ./src/scss/global.scss ./dev/css/global.css --style=compressed",
+    "build_prod:sass": "npx sass ./src/scss/global.scss ./docs/css/global.css --style=compressed",
+    "watch_dev:sass": "npx sass ./src/scss/global.scss ./dev/css/global.css --style=compressed",
     "build_prod:webpack": "npx webpack --config prod.webpack.js",
     "build_dev:webpack": "npx webpack --config dev.webpack.js",
     "watch_dev:webpack": "npx webpack -w --config dev.webpack.js",
