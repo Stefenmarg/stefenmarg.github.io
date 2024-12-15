@@ -14,4 +14,6 @@ Since I had an account there I thought it would be a great change to dive into t
 So far I am loving this set of challenges! 
 (Solutions to the challenges <i>may</i> be released after January 1st; if they are released they will be inside the respective post.)
 
-Since a new section for TryHackMe was created you can now see all the posts regarding AoC 2024 [here!](https://stefenmarg.github.io/thm)
+Since a new section for TryHackMe was created you can now see all the posts regarding AoC 2024 [here!](https://stefenmarg.github.io/thm) 
+
+By the way! all the images that are above the topics covered section in the AoC 2024 posts can be found in the [Advent of Cyber room.](https://tryhackme.com/r/room/adventofcyber2024)

@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 14 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,40 +98,24 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="My image badge on tryhackme.com">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Sat, Dec 07, 24, <a href="/posts/TryHackMe/Day_7_07_12_2024/">Advent of Cyber 2024 - Day 7</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Fri, Dec 06, 24, <a href="/posts/TryHackMe/Day_6_06_12_2024/">Advent of Cyber 2024 - Day 6</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Thu, Dec 05, 24, <a href="/posts/TryHackMe/Day_5_05_12_2024/">Advent of Cyber 2024 - Day 5</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Mon, Dec 02, 24, <a href="/posts/TryHackMe/Day_2_02_12_2024/">Advent of Cyber 2024 - Day 2</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sun, Dec 01, 24, <a href="/posts/TryHackMe/Day_1_01_12_2024/">Advent of Cyber 2024 - Day 1</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="previous" href="/thm/">Newer posts</a></p>
-</div>
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/5f04259cf9bf5b57aed2c476-1731812568781.svg">
+<h2>Advent of Cyber 2024 - Day 14</h2>
+<h3>Topic Covered Day 14: Certificate mismanagement</h3>
+<p>Another Day Another Burp Suite Project!
+(Sorry for this post being late, as mentioned before I've burned my ssd.)</p>
+<p>Day 14's challenge was about finding login information, flags in portals with said information and then what complany signed the certificate of the Gift Scheduler site.</p>
+<p>We would need do add the machine ip as gift-scheduler.thm by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token builtin class-name">echo</span> <span class="token string">"MACHINE_IP gift-scheduler.thm"</span> <span class="token operator">>></span> /etc/hosts</code></pre>
+<p>After that, it is optional to log into the Mayor's account, but we could also dive straight into the action by starting Burp Suit with a temporary default project and setting up a listener on the attackboxe's ip and on port 8080. Then like above we would need to set our computer as the wareville gateway by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token builtin class-name">echo</span> <span class="token string">"AttackBox_IP wareville-qw"</span> <span class="token operator">>></span> /etc/hosts</code></pre>
+<p>In order to get the user traffic we would need to run an .sh script that is in: <code>~/Rooms/AoC2024/Day14</code> from the terminal that would look like the one below BUT FIRST you should start the interception to get the usernames and passwords required.</p>
+<pre class="language-bash"><code class="language-bash">~ $ ~/Rooms/AoC2024/Day14/route-elf-traffic.sh</code></pre>
+<p>The last part for the flags would need for us to log into the accounts of some elves, our dear marta Mayware that still has her job strangely and canseling G-day. The flags would all be seen uppon login and thus we would get our flags.</p>
+<p>Pretty fun today, I was searching for easter eggs on the logins and all i have to say is that i have not gottend so many 'Wrong password' errors when trying to login to an admin account.</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 

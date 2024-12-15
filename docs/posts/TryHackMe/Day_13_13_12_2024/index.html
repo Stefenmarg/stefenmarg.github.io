@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 13 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,40 +98,23 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="My image badge on tryhackme.com">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Sat, Dec 07, 24, <a href="/posts/TryHackMe/Day_7_07_12_2024/">Advent of Cyber 2024 - Day 7</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Fri, Dec 06, 24, <a href="/posts/TryHackMe/Day_6_06_12_2024/">Advent of Cyber 2024 - Day 6</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Thu, Dec 05, 24, <a href="/posts/TryHackMe/Day_5_05_12_2024/">Advent of Cyber 2024 - Day 5</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Wed, Dec 04, 24, <a href="/posts/TryHackMe/Day_4_04_12_2024/">Advent of Cyber 2024 - Day 4</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Mon, Dec 02, 24, <a href="/posts/TryHackMe/Day_2_02_12_2024/">Advent of Cyber 2024 - Day 2</a> by: Stefanos Margaritis</li>
-</ul></p>
-<p><ul>
-<li> On: Sun, Dec 01, 24, <a href="/posts/TryHackMe/Day_1_01_12_2024/">Advent of Cyber 2024 - Day 1</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="previous" href="/thm/">Newer posts</a></p>
-</div>
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/5fc2847e1bbebc03aa89fbf2-1731326932593.png">
+<h2>Advent of Cyber 2024 - Day 13</h2>
+<h3>Topic Covered Day 13: Web Sockets</h3>
+<p>Another Day Another Burp Suite Project!
+(Sorry for this post being late, I've burned my ssd accidentally.)</p>
+<p>Day 13's challenge was about WebSockets and their vulnerabilities!
+After a brief introduction on WebSockets and their potential uses on things like chat apps, live data feeds and real time games; we were also given examples of their potential vulnerabilities that have to do with Authentication, Tampering the conents and their use on DoS attacks. The two first options are what we are going to use for the tasks.</p>
+<p>After starting the machine and after logging into the attackBox we had to go to the ip of the machine to see todays' playground. The tools that we would need for today were Burp Suit and the FoxyProxy extension on the browser.</p>
+<p>We will need to intercept the proxy WebSocket traffic with the proxy tools of Burp Suite and then we would send it having modified the userID of the track post packet with the one of the mayor's car that would look like this (ID is of the glitch not the mayor):</p>
+<pre class="language-json"><code class="language-json"><span class="token number">42</span><span class="token punctuation">[</span><span class="token string">"track"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"8"</span><span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
+<p>On successfull tracking the mayor would post on the chat on the right about his car being tacked and then the flag.</p>
+<p>For the second flag we would need to manipulate a message sent by a user with a diffrent id.</p>
+<p>It was a bit confusing to try and forward the &quot;packets&quot; but in the end i did end up finding the flags so no harm done. See you for Day 14.</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
