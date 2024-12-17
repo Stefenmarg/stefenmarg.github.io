@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>TryHackMe | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 17 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,22 +98,24 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				<h2>TryHackMe</h2>
-<p>In this section posts about my activity on TryHackMe will be posted. Im new to this so please be patient while I explore the wonderfull world of <a href="https://tryhackme.com">TryHackMe</a>!</p>
-<div class="center">
-    <a href="https://tryhackme.com/r/p/Stefenmarg">
-    <img src="https://tryhackme-badges.s3.amazonaws.com/Stefenmarg.png" alt="My image badge on tryhackme.com">
-    </a>
-</div>
-<div class="page" id="Page">
-	<h2> Posts regarding TryHackMe: </h2>
-<p><ul>
-<li> On: Tue, Dec 03, 24, <a href="/posts/TryHackMe/Day_3_03_12_2024/">Advent of Cyber 2024 - Day 3</a> by: Stefanos Margaritis</li>
-</ul></p>
-</div>
-<div class="pagination center">
-<p><a class="previous" href="/thm/1/">Newer posts</a></p>
-</div>
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/5ed5961c6276df568891c3ea-1731684332887.svg">
+<h2>Advent of Cyber 2024 - Day 17</h2>
+<h3>Topic Covered Day 17: Log Analysis</h3>
+<p>I missed going through logs honestly, will I regret it?</p>
+<p>I do plead guildy though for my apps' logs looking like this:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:06 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+RecordingInfo: <span class="token number">1</span> <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+<span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:22 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+RecordingInfo: <span class="token number">1</span> <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+<span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:25 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt</code></pre>
+<p>Which i would not say is unreadable, it just takes some time to train yourself on how to read them.</p>
+<p>Anyways, today we are using <a href="https://www.splunk.com/">Splunk</a>  a platform for collecting, storing, and analysing machine data.</p>
+<p>We were shown how to execute some filtering commands (A specific one would solve Task 1) that would gives us clues like a particular session_id which when searched for would lead us to more filtering in order to get a specific username thus solving Tasks 2 &amp; 3.</p>
+<p>Not much things to explain today, see you tomorrow!</p>
+<p>Thanks a lot for reading!</p>
+<ul>
+<li>Stefanos M.</li>
+</ul>
 
 			</div>
 
