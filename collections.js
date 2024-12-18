@@ -10,7 +10,7 @@ async function registerCollections(eleventyConfig, limit) {
         console.log(`[11ty CSTM] Registered new collection '${entry}'`);
         eleventyConfig.addCollection(entry, (collection) => {
           const items = collection.getFilteredByGlob(`${entryPath}/*.md`);
-          return (limit ? items.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, limit) : items.sort((a, b) => new Date(b.date) - new Date(a.date)));
+          return (items.sort((a, b) => new Date(b.date) - new Date(a.date)));
         });
       }
     }));
