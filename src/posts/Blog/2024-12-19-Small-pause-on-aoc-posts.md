@@ -2,7 +2,7 @@
 title: 'A small pause in uploading posts for AoC 2024'
 author: 'Stefenmarg'
 layout: 'layouts/base.njk'
-date: "2024-10-20"
+date: "2024-12-19"
 ---
 
 ## {{title}}
