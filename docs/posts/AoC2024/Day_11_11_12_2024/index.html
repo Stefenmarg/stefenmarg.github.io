@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 11 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,25 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/618b3fa52f0acc0061fb0172/room-content/618b3fa52f0acc0061fb0172-1730305996223.png">
+<h2>Advent of Cyber 2024 - Day 11</h2>
+<h3>Topic Covered Day 11: Wi-Fi Attacks</h3>
+<p>Todays lesson involed ssh-ing into ✨ the glitch's✨ machine.</p>
+<p>Wi-Fi Attacks are not my cup of tea as i have learned today but the challenge was good, I cannot complain.</p>
+<p>First we had to see information about the wireless interface with the use of the <code>iw dev</code> command (data here is an exaple and does not represent actual data of the challenge).</p>
+<pre class="language-bash"><code class="language-bash">~ $ iw dev
+phy<span class="token comment">#0</span>
+	Interface wls1
+		ifindex <span class="token number">3</span>
+		wdev 0x1
+		addr 00:24:48:8c:71:1a
+		ssid Server-AP
+		<span class="token builtin class-name">type</span> managed</code></pre>
+<p>The addr is the mac address of the NIC that the ssh machine has so Task 1 done. After that, we had to scan all available Wi-Fi Access Points using our wireless interface (with the above command on the ssh machine you would get it's interface name that you would put instead of wls1) by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token function">sudo</span> iw dev wls1 scan</code></pre>
+<p>which would get us a nice list of names and other information about the wifi APs, then you would need to find the AP of our interest and with it's SSID and it's BSSID you would have successfully finished Task 2.</p>
+<p>After following the rest of the instruction on the use of <code>airodump-ng</code>, <code>aireplay-ng</code> and 'aircrack-ng' you would have successfullty finished Task 3 too!</p>
+<p>It was a good first dive into Wi-Fi attacks, prety enjoyable! Lets see what Day 12 brings for us!!</p>
 
 			</div>
 

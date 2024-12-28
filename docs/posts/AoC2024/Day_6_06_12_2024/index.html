@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 6 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,14 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/63588b5ef586912c7d03c4f0/room-content/63588b5ef586912c7d03c4f0-1730728443161.png">
+<h2>Advent of Cyber 2024 - Day 6</h2>
+<h3>Topic Covered: Sandboxes</h3>
+<p>There are malware out there that are able to run only on real machines and I've never relly wondered on how that was done; until today where the challenge showcased some code snippetes in C that was able to recognise wether a machine was a VM or not simply based on some registry keys.</p>
+<p>Additionally, new tools were used today! First was Yara an EDR system that can identify and classify malware based on custom rules that helps detect malicious code; and  then there is FLOSS that is a tool that extracts obfiscated strings from malware binaries with similar functionality to the strings command that can be found on unix systems.</p>
+<p>For the first task all you need to do is while running Yara, run at the same time that malware 'MerryChristmas.exe' and after that you'll be getting a popup with the 1st flag's content.</p>
+<p>For the second task you will need to simply provide to floss.exe the above mentioned malware file and then find the hidden flag while searching in the output of the program.</p>
+<p>Today's challenge as a bit easy but that means tomorrow's is gonna be very fun!</p>
 
 			</div>
 

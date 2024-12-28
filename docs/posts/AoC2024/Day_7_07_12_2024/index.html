@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="stefenmarg.github.io is a personal portfolio site to showcase my projects.">
+    <meta name="keywords" content="student portfolio, Stefanos Margaritis, Development, Coding">
+    <meta name="author" content="Stefanos Margaritis">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+
+    <!-- SEO optimisations for the site -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stefanos Margaritis",
+            "url": "",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefenmarg",
+                "https://github.com/stefenmarg",
+                "https://x.com/stefenmarg"
+            ],
+            "jobTitle": "Undergraduate Student in Digital Systems",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "University of Thessaly"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-4NCMDDS9PY');
+    </script>
+
+    <!-- The main JS file for the site -->
+    <script src="/js/global.bundle.js"></script>
+
+    <!-- The main file for the snow effect. -->
+    <script src="/js/snowstorm.js"></script>
+
+
+    <!-- Themes and other theme things -->
+    <script>
+        // Load theme as soon as the DOM is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            ThemeManager.SyncCookieTheme();
+            SnowManager.enableCheck();
+        });
+    </script>
+
+    <!-- CSS and styles -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
+    
+
+    <title>Advent of Cyber 2024 - Day 7 | Stefanos M.</title>
+</head>
+	<body class="Ribbon" id='Body'>
+		<div>
+			<div id="Header">
+				<header>
+	<div class="container">
+		<div class="title-container" id="Title">
+			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+		</div>
+		<div class="nav-container" id="NavigationPane">
+			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
+			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			
+			
+				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
+			
+				<a id="NavigationEntry" class="nav-links" href="/about/"><i class="hover-animate"> About me </i></a>
+			
+			
+		</div>
+	</div>
+</header>
+
+			</div>
+
+			<div class="seperator" id="Content">
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/5dbea226085ab6182a2ee0f7-1730384938554.png">
+<h2>Advent of Cyber 2024 - Day 7</h2>
+<h3>Topic Covered Day 7: AWS Log Analysis</h3>
+<p>Day 7 involved parsinng logs created by CloudTrail that are in a JSON format with the command line tool called <code>jq</code> and later with the command line tool <code>grep</code> to get string information from the .log file. For example if we have the following json file:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"people"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Alice"</span><span class="token punctuation">,</span>
+      <span class="token property">"favoriteColor"</span><span class="token operator">:</span> <span class="token string">"Blue"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span>
+      <span class="token property">"favoriteColor"</span><span class="token operator">:</span> <span class="token string">"Red"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Charlie"</span><span class="token punctuation">,</span>
+      <span class="token property">"favoriteColor"</span><span class="token operator">:</span> <span class="token string">"Green"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Diana"</span><span class="token punctuation">,</span>
+      <span class="token property">"favoriteColor"</span><span class="token operator">:</span> <span class="token string">"Purple"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<p>and run the <code>jq [options] &lt;filter&gt; [file]</code> command we would be getting the following output.</p>
+<pre class="language-bash"><code class="language-bash">~ $ jq <span class="token parameter variable">--tab</span> .people<span class="token punctuation">[</span><span class="token punctuation">]</span>.name ./people_prefs.json 
+<span class="token string">"Alice"</span>
+<span class="token string">"Bob"</span>
+<span class="token string">"Charlie"</span>
+<span class="token string">"Diana"</span></code></pre>
+<p>That command is going to give us all the answers if we use the filers correctly when using them in on the json files. Later with the grep tool we are going to analyse the rds logs that look like this:</p>
+<pre class="language-myqsl"><code class="language-myqsl">2024-11-28T15:22:17.728Z 2024-11-28T15:22:17.728648Z	  263 Query	INSERT INTO wareville_bank_transactions (account_number, account_owner, amount) VALUES ('8839 2219 1329 6917', 'Care4wares Fund', 342.80)
+2024-11-28T15:22:18.569Z 2024-11-28T15:22:18.569279Z	  263 Query	INSERT INTO wareville_bank_transactions (account_number, account_owner, amount) VALUES ('8839 2219 1329 6917', 'Care4wares Fund', 929.57)
+2024-11-28T15:23:02.605Z 2024-11-28T15:23:02.605700Z	  263 Query	INSERT INTO wareville_bank_transactions (account_number, account_owner, amount) VALUES ('----- REDACTED ----', 'Mayor Malware', 193.45)
+2024-11-28T15:23:02.792Z 2024-11-28T15:23:02.792161Z	  263 Query	INSERT INTO wareville_bank_transactions (account_number, account_owner, amount) VALUES ('----- REDACTED ----', 'Mayor Malware', 998.13)</code></pre>
+<p>By running $ grep 'Mayor Malware' ./jjs we are able to filter our logs and get our results:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token function">grep</span> <span class="token string">'Mayor Malware'</span> ./jjs
+<span class="token number">2024</span>-11-28T15:23:02.605Z <span class="token number">2024</span>-11-28T15:23:02.605700Z	  <span class="token number">263</span> Query	INSERT INTO wareville_bank_transactions <span class="token punctuation">(</span>account_number, account_owner, amount<span class="token punctuation">)</span> VALUES <span class="token punctuation">(</span><span class="token string">'----- REDACTED ----'</span>, <span class="token string">'Mayor Malware'</span>, <span class="token number">193.45</span><span class="token punctuation">)</span>
+<span class="token number">2024</span>-11-28T15:23:02.792Z <span class="token number">2024</span>-11-28T15:23:02.792161Z	  <span class="token number">263</span> Query	INSERT INTO wareville_bank_transactions <span class="token punctuation">(</span>account_number, account_owner, amount<span class="token punctuation">)</span> VALUES <span class="token punctuation">(</span><span class="token string">'----- REDACTED ----'</span>, <span class="token string">'Mayor Malware'</span>, <span class="token number">998.13</span><span class="token punctuation">)</span></code></pre>
+<p>With all of the above and the filters you are able to get all the required info to solve Day 7's challenge</p>
+<p>It was a good challenge overall, only issue was that I wasn't able to paste to the AttackBox so there was a lot of time copying word for word the commands.</p>
+
+			</div>
+
+			<div class="seperator" id="Footer">
+				<footer>
+	<div class="cst_nav center" id="SocialsPane">
+		<nav>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
+			
+				<a id="SocialsIcon" class="nav-links" href="https://stefenmarg.github.io/feed.xml"><i class="fa-solid fa-rss hover-animate"></i></a>
+			
+		</nav>
+	</div>
+
+	<div class="center Copyright" id="Copyright">
+		Copyright © 2024 Stefanos Margaritis. All rights reserved.
+	</div>
+</footer>
+
+
+			</div>
+		</div>
+	</body>
+</html>

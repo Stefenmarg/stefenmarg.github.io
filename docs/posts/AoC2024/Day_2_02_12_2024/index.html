@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 2 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,21 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5dbea226085ab6182a2ee0f7/room-content/5dbea226085ab6182a2ee0f7-1730369227263.png">
+<h2>Advent of Cyber 2024 - Day 2</h2>
+<h3>Topic Covered: Log Analysis</h3>
+<p>This Challenge we were given access to a platform with A LOT of logs, our jobs were filter and harvest information from those logs.</p>
+<p>First thing that struck the eye was the strange powershell code that was run on some machines and one of the things that alerted me was this:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token string">"SQBuAHMAdABhAGwAbAAtAFcAaQBuAGQAbwB3AHMAVQBwAGQAYQB0AGUAIAAtAEEAYwBjAGUAcAB0AEEAbABsACAALQBBAHUAdABvAFIAZQBiAG8AbwB0AA=="</span></code></pre>
+<p>What this is can be found very easily. One of the things that you learn when watching videos online about infostealers is to recognise (and always assume) Base64, and wouldn't you know it decoding it gives us:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"SQBuAHMAdABhAGwAbAAtAFcAaQBuAGQAbwB3AHMAVQBwAGQAYQB0AGUAIAAtAEEAYwBjAGUAcAB0AEEAbABsACAALQBBAHUAdABvAFIAZQBiAG8AbwB0AA=="</span> <span class="token operator">|</span> base64 <span class="token parameter variable">-d</span> 
+Install-WindowsUpdate <span class="token parameter variable">-AcceptAll</span> <span class="token parameter variable">-AutoReboot</span></code></pre>
+<p>Not what I expected but Task 5 is one (prematurely but done)!</p>
+<p>Now resuming to the platform and setting up the recomended filters you are able to see who is causing the authentication failures.</p>
+<p>Updating the filter you are also available to see when the ADM-01 account logged in first time and the ip address of the log in thus Tasks 3 &amp; 4 are done!</p>
+<p>Now, broadening the check period for the request and adding the autherntication plus the failed filters you are able to see the total failed login attemps and if you sort the list in such a way you will be able to find what user.name was causing the most failed login attempts; thus Tasks 1 &amp; 2 are done!</p>
+<p>These were the steps followed to complete Day 2 of AoC (<s>Even though it took me about a 1:15 hrs to complete it myself but on my defense i am using a notebook</s>).</p>
+<p>Can't wait for the challenge of Day 3!!</p>
 
 			</div>
 

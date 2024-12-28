@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 13 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,19 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5fc2847e1bbebc03aa89fbf2/room-content/5fc2847e1bbebc03aa89fbf2-1731326932593.png">
+<h2>Advent of Cyber 2024 - Day 13</h2>
+<h3>Topic Covered Day 13: Web Sockets</h3>
+<p>Another Day Another Burp Suite Project!
+(Sorry for this post being late, I've burned my ssd accidentally.)</p>
+<p>Day 13's challenge was about WebSockets and their vulnerabilities!
+After a brief introduction on WebSockets and their potential uses on things like chat apps, live data feeds and real time games; we were also given examples of their potential vulnerabilities that have to do with Authentication, Tampering the conents and their use on DoS attacks. The two first options are what we are going to use for the tasks.</p>
+<p>After starting the machine and after logging into the attackBox we had to go to the ip of the machine to see todays' playground. The tools that we would need for today were Burp Suit and the FoxyProxy extension on the browser.</p>
+<p>We will need to intercept the proxy WebSocket traffic with the proxy tools of Burp Suite and then we would send it having modified the userID of the track post packet with the one of the mayor's car that would look like this (ID is of the glitch not the mayor):</p>
+<pre class="language-json"><code class="language-json"><span class="token number">42</span><span class="token punctuation">[</span><span class="token string">"track"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"8"</span><span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
+<p>On successfull tracking the mayor would post on the chat on the right about his car being tacked and then the flag.</p>
+<p>For the second flag we would need to manipulate a message sent by a user with a diffrent id.</p>
+<p>It was a bit confusing to try and forward the &quot;packets&quot; but in the end i did end up finding the flags so no harm done. See you for Day 14.</p>
 
 			</div>
 

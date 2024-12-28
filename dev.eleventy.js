@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
     registerCollections(eleventyConfig, 15);
     
     //Url attributes
-    eleventyConfig.addGlobalData("url", "http://192.168.1.74");
+    eleventyConfig.addGlobalData("url", "http://192.168.1.253:8080");
     eleventyConfig.addGlobalData("baseurl", "");
 
     //Build input and output files    

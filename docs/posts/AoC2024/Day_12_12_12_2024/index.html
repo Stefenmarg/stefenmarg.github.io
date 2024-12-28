@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 12 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,22 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/62a7685ca6e7ce005d3f3afe/room-content/62a7685ca6e7ce005d3f3afe-1730353204089.png">
+<h2>Advent of Cyber 2024 - Day 12</h2>
+<h3>Topic Covered Day 12: Web Timing Attacks</h3>
+<p>What was covered today was pretty similar to Day 5's challenge since we were using again Burp Suite to capture a POST request and repeat a bunch of them (10 of them to be exact) in order to move monry from a bank account in Glitch's name in order to get the flag.</p>
+<p>Our main learning topic was about HTTPS/2, how it was an update for the HTTP/1 protocol, it's slow but steardy adoption and that if it were to be implemented incorrectly some of it's features could be exploited by a mlicious party.</p>
+<p>After a brief intoduction to the web timing attack for HTTP/2 that we were gonna use (due to the <code>SINGLE-PACKET MULTI-REQUEST</code> feature that has made it difficult to patch web timining ussues that can be introduced), we were shown how to start another default project in the Burp Suite.</p>
+<p>Given our credentials, our first task was to try to explore the attack on our bank account with the interception feature that the Burp Suite has. After logging in to our account and turning on the interception, we would try to send some amount of money to the Glitch's bank account <code>with code 101</code> and then send the POST request to the repeater, making another 9 copies of the requests, adding them to a group and finally sending them all while using the <code>Send in parallel (last-byte sybc)</code> option.</p>
+<p>To get the flag all we now have to do is:</p>
+<ul>
+<li>Log out of our account,</li>
+<li>Log in to the Glitch's account,</li>
+<li>Capture the transaction packet,</li>
+<li>Send it as many times as we need to transfer over 2000$,</li>
+<li>Refresh the site,</li>
+<li>AND finally get the flag!</li>
+</ul>
 
 			</div>
 

@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 14 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,20 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/5f04259cf9bf5b57aed2c476-1731812568781.svg">
+<h2>Advent of Cyber 2024 - Day 14</h2>
+<h3>Topic Covered Day 14: Certificate mismanagement</h3>
+<p>Another Day Another Burp Suite Project!
+(Sorry for this post being late, as mentioned before I've burned my ssd.)</p>
+<p>Day 14's challenge was about finding login information, flags in portals with said information and then what complany signed the certificate of the Gift Scheduler site.</p>
+<p>We would need do add the machine ip as gift-scheduler.thm by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token builtin class-name">echo</span> <span class="token string">"MACHINE_IP gift-scheduler.thm"</span> <span class="token operator">>></span> /etc/hosts</code></pre>
+<p>After that, it is optional to log into the Mayor's account, but we could also dive straight into the action by starting Burp Suit with a temporary default project and setting up a listener on the attackboxe's ip and on port 8080. Then like above we would need to set our computer as the wareville gateway by running:</p>
+<pre class="language-bash"><code class="language-bash">~ $ <span class="token builtin class-name">echo</span> <span class="token string">"AttackBox_IP wareville-qw"</span> <span class="token operator">>></span> /etc/hosts</code></pre>
+<p>In order to get the user traffic we would need to run an .sh script that is in: <code>~/Rooms/AoC2024/Day14</code> from the terminal that would look like the one below BUT FIRST you should start the interception to get the usernames and passwords required.</p>
+<pre class="language-bash"><code class="language-bash">~ $ ~/Rooms/AoC2024/Day14/route-elf-traffic.sh</code></pre>
+<p>The last part for the flags would need for us to log into the accounts of some elves, our dear marta Mayware that still has her job strangely and canseling G-day. The flags would all be seen uppon login and thus we would get our flags.</p>
+<p>Pretty fun today, I was searching for easter eggs on the logins and all i have to say is that i have not gottend so many 'Wrong password' errors when trying to login to an admin account.</p>
 
 			</div>
 

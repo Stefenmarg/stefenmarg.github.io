@@ -67,7 +67,7 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" >
     
 
-    <title>Home | Stefanos M.</title>
+    <title>Advent of Cyber 2024 - Day 17 | Stefanos M.</title>
 </head>
 	<body class="Ribbon" id='Body'>
 		<div>
@@ -98,38 +98,19 @@
 			</div>
 
 			<div class="seperator" id="Content">
-				
-<div class="page" id="Page">
-
-	<h2>Home</h2>
-<h3>What is the purpose of this site?</h3>
-<p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
-<p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
-
-
-	<h2> Most recent posts: </h2>
-	
-		<ul>
-			<li> On: Thu, Dec 19, 24, <a href="/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/">A small pause in uploading posts for AoC 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Dec 01, 24, <a href="/posts/Blog/2024-12-01-Advent-of-Cyber/">Advent of Cyber 2024 By TryHackMe</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sat, Nov 09, 24, <a href="/posts/Blog/2024-11-09-WordCamp-Larisa-2024/">WordCamp Larisa 2024</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-		<ul>
-			<li> On: Sun, Oct 20, 24, <a href="/posts/Blog/2024-10-27-Rewrite-in-11ty/">My experience with 11ty as a static site generator.</a> by: Stefanos Margaritis</li>
-		</ul>
-	
-</div>
-
+				<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/5ed5961c6276df568891c3ea-1731684332887.svg">
+<h2>Advent of Cyber 2024 - Day 17</h2>
+<h3>Topic Covered Day 17: Log Analysis</h3>
+<p>I missed going through logs honestly, will I regret it?</p>
+<p>I do plead guildy though for my apps' logs looking like this:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:06 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+RecordingInfo: <span class="token number">1</span> <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+<span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:22 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+RecordingInfo: <span class="token number">1</span> <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt
+<span class="token number">2024</span>-12-16 <span class="token number">22</span>:53:25 WatchCamera <span class="token number">5</span> byte <span class="token number">11</span> rij5uu4gt204q0d3eb7jj86okt</code></pre>
+<p>Which i would not say is unreadable, it just takes some time to train yourself on how to read them.</p>
+<p>Anyways, today we are using <a href="https://www.splunk.com/">Splunk</a>  a platform for collecting, storing, and analysing machine data.</p>
+<p>We were shown how to execute some filtering commands (A specific one would solve Task 1) that would gives us clues like a particular session_id which when searched for would lead us to more filtering in order to get a specific username thus solving Tasks 2 &amp; 3.</p>
 
 			</div>
 
