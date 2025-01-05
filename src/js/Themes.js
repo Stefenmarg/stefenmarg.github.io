@@ -52,4 +52,15 @@ export function SyncCookieTheme() {
         // Set the Default mode if cookie is not found
         setMode(0);
     }
+    update_copyright();
+}
+
+//Automatically updates the year in the copyright notice in
+// the footer of the site with the current year of the user.
+function update_copyright() {
+    //Get the div that holds the year text.
+    const year_obj = document.getElementById('copyright_date');
+    //Update it's yeaer to the current year.
+    //&nbsp; basically will not collapse like regular spaces in HTML.
+    year_obj.innerHTML = ` &nbsp;${ new Date().getFullYear()}&nbsp;`
 }
