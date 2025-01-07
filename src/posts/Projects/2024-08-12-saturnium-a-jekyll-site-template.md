@@ -1,7 +1,8 @@
 ---
 title: "Saturnium Ruby, a simple jekyll site template"
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-08-12"
+author: Stefenmarg
 ---
 
 # What is ['Saturnium Ruby aka Saturnium'](https://stefenmarg.github.io/SaturniumRuby/)

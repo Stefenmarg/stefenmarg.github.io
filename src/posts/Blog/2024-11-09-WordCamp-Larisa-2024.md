@@ -1,11 +1,9 @@
 ---
 title: 'WordCamp Larisa 2024'
 author: 'Stefenmarg'
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-11-09"
 ---
-
-## {{ title }}
 
 WordCamp Larisa 2024 happend, pretty amazing event not gonna lie!
 

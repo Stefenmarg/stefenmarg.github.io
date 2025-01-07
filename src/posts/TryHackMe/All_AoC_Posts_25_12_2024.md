@@ -1,11 +1,9 @@
 ---
 title: 'Advent of Cyber 2024 - Post Colletion.'
 author: 'Stefenmarg'
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-12-25"
 ---
-
-## {{ title }}
 
 {% for post in collections.AoC2024 %}
 	<ul>

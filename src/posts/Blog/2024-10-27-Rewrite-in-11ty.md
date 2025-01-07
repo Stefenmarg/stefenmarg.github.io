@@ -1,11 +1,9 @@
 ---
 title: 'My experience with 11ty as a static site generator.'
 author: 'Stefenmarg'
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-10-20"
 ---
-
-## {{title}}
 
 TL:DR It was amazing, so many posibilities, no issues to deal with during the upload process.
 

@@ -12,10 +12,12 @@
             <item>
                 <title>A small pause in uploading posts for AoC 2024</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-12-19-Small-pause-on-aoc-posts/</link>
-                <description> &lt;h2&gt;A small pause in uploading posts for AoC 2024&lt;/h2&gt;
-&lt;p&gt;TL:DR Site is bring updated and i will not be able to post since  will also be porting the tample to this site.&lt;/p&gt;
+                <description> &lt;p&gt;TL:DR Site is bring updated and i will not be able to post since  will also be porting the tample to this site.&lt;/p&gt;
 &lt;p&gt;That of cource does not mean that i will not fo the challenges! Im not losing the streak!
 Posting should resume normally in like a week if everything goes well!&lt;/p&gt;
+&lt;p&gt;Update: The update was scrapped due to causing more issues than solvng issues but there will be small steps and updates in this  site with parts of features that were supposed to come out.&lt;/p&gt;
+&lt;p&gt;Now, if i will release posts having to do with the rest of the days from AOC 2024 I am still unsure,
+Happy New Year though!&lt;/p&gt;
 &lt;p&gt;Thanks for reading (this is not a rewrite),&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Stefanos M.&lt;/li&gt;
@@ -28,8 +30,7 @@ Posting should resume normally in like a week if everything goes well!&lt;/p&gt;
             <item>
                 <title>Advent of Cyber 2024 By TryHackMe</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-12-01-Advent-of-Cyber/</link>
-                <description> &lt;h2&gt;Advent of Cyber &#39;24&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://tryhackme.com/r/room/adventofcyber2024&quot;&gt;Advent of Cyber&lt;/a&gt; is a christmas event organised by the TryHackMe team that releases every day at &lt;code&gt;6PM GMT(UTC+0)&lt;/code&gt; a new and exciting challenge until &lt;code&gt;December 31st&lt;/code&gt;!&lt;/p&gt;
+                <description> &lt;p&gt;&lt;a href=&quot;https://tryhackme.com/r/room/adventofcyber2024&quot;&gt;Advent of Cyber&lt;/a&gt; is a christmas event organised by the TryHackMe team that releases every day at &lt;code&gt;6PM GMT(UTC+0)&lt;/code&gt; a new and exciting challenge until &lt;code&gt;December 31st&lt;/code&gt;!&lt;/p&gt;
 &lt;p&gt;Since I had an account there I thought it would be a great change to dive into the Cybersecurity part of the internet for a taste since so far I have only done programming and electronics. Plus uppon 100% completion I&#39;ll be getting a badge AND a certificate!&lt;/p&gt;
 &lt;p&gt;So far I am loving this set of challenges!
 (Solutions to the challenges &lt;i&gt;may&lt;/i&gt; be released after January 1st; if they are released they will be inside the respective post.)&lt;/p&gt;
@@ -43,8 +44,7 @@ Posting should resume normally in like a week if everything goes well!&lt;/p&gt;
             <item>
                 <title>WordCamp Larisa 2024</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-11-09-WordCamp-Larisa-2024/</link>
-                <description> &lt;h2&gt;WordCamp Larisa 2024&lt;/h2&gt;
-&lt;p&gt;WordCamp Larisa 2024 happend, pretty amazing event not gonna lie!&lt;/p&gt;
+                <description> &lt;p&gt;WordCamp Larisa 2024 happend, pretty amazing event not gonna lie!&lt;/p&gt;
 &lt;p&gt;There were very interesting topics covered, from personal/company branding, to marketing, to forking (&lt;i class=&quot;fa-solid fa-code-fork&quot;&gt;&lt;/i&gt;) the GPL way and even making user&#39;s search experience better. All the presentations were amazing and the topics that were covered were so interesting that i lost track of time; talks that were supposed to be 30-45 minutes long felt to be 15 minutes long.&lt;/p&gt;
 &lt;p&gt;On arrivng at Joist we were given our badges and a bundle of gifts (An event themed bag, T-Shirts, pens, a squeeze ball, mousepads, coupons and most importantly stickers) for which im very greatfull. After getting the gifts, we got right infront of the sponsors&#39; den in which companies had stands and some of them even had giveaways. All the companies were offering a great amount of services around hosting, domains (very tempted to buy then and there a domain for the site not gonna lie), marketing, eCommerce, website design and more.&lt;/p&gt;
 &lt;p&gt;I mostly attended the presentations on Track 1 and not that many workshops since the topics covered were a bit more interesting than the workshops. Overall, the event was amazing and i feel very lucky to have been there, meeting new people and unlocking new opportunities.&lt;/p&gt;
@@ -62,8 +62,7 @@ Posting should resume normally in like a week if everything goes well!&lt;/p&gt;
             <item>
                 <title>My experience with 11ty as a static site generator.</title>
                 <link>https://stefenmarg.github.io/posts/Blog/2024-10-27-Rewrite-in-11ty/</link>
-                <description> &lt;h2&gt;My experience with 11ty as a static site generator.&lt;/h2&gt;
-&lt;p&gt;TL:DR It was amazing, so many posibilities, no issues to deal with during the upload process.&lt;/p&gt;
+                <description> &lt;p&gt;TL:DR It was amazing, so many posibilities, no issues to deal with during the upload process.&lt;/p&gt;
 &lt;p&gt;One question would be &amp;quot;Why did I choose to re-write my site (again)&amp;quot; and the answer would be that I didn&#39;t like the previous site looked, the green and the tones of the last one made me think that it was a bit too much for a portfolio.&lt;/p&gt;
 &lt;p&gt;But, now with a WordPress event that is happening on the 9th of November that i will be attending and one of  the event&#39;s topics including web development, I decided try and re-write it. When trying to start the re-write i had some issues with jekyll (the static site generators i used for my sites before 11ty), I decided to try a diffrent generator and I&#39;m very thankful I did.&lt;/p&gt;
 &lt;p&gt;This site was built in just 4 days; 2 of which were planning and testing the capabilities of the generator and the other 2 where where to build the site as you see it as per 2024-10-20. I need to mention that I didn&#39;t put 100% of my free time into building the site BUT on average I spent ~4.5 hours every day since I had to care to my university&#39;s lessons.&lt;/p&gt;

@@ -1,0 +1,12 @@
+{
+	"Dev": {
+		"url":"localhost:8080",
+		"baseurl":"",
+		"output": "dev"
+	},
+	"Prod": {
+		"url":"https://stefenmarg.github.io",
+		"baseurl":"",
+		"output": "docs"
+	}
+}

@@ -1,11 +1,9 @@
 ---
 title: 'Advent of Cyber 2024 By TryHackMe'
 author: 'Stefenmarg'
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-12-01"
 ---
-
-## Advent of Cyber '24
 
 [Advent of Cyber](https://tryhackme.com/r/room/adventofcyber2024) is a christmas event organised by the TryHackMe team that releases every day at `6PM GMT(UTC+0)` a new and exciting challenge until `December 31st`!  
 

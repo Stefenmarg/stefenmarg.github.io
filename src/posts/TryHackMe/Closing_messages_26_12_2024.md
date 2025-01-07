@@ -1,11 +1,9 @@
 ---
 title: 'Advent of Cyber 2024 - Final Satements and feedback.'
 author: 'Stefenmarg'
-layout: 'layouts/base.njk'
+layout: 'layouts/post.njk'
 date: "2024-12-26"
 ---
-
-## {{ title }}
 
 Advent of Cyber 2024 (⭐⭐⭐⭐⭐) 5/5 Stars.
 
@@ -17,15 +15,10 @@ Now that it has finished i have sat and watched the walkthroughs and EVERY SINGL
 
 Although, I would want to have tinkered with some databases, it would have been pretty cool.
 
-Also, I got my certificate!!
-
-<object data="{{ url }}{{ baseurl }}/assets/CV/THM-7JXTTPP7BT.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="{{ url }}{{ baseurl }}/assets/CV/THM-7JXTTPP7BT.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ url }}{{ baseurl }}/assets/CV/THM-7JXTTPP7BT.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+Also, I got my certificate and it can be found in the about page!!
 
 ~~Now its time to wait for the prices! (Im joking of course! I Would have done this without the prices.)~~
+Update: Didn't win anything and it is perfectly fine!
 
 Thanks a lot for reading!
  * Stefanos M.

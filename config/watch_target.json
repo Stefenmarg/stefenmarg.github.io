@@ -1,0 +1,8 @@
+{
+  "paths": [
+    "./src/_data",
+    "./src/js",
+    "./src/posts",
+    "./src/_includes"
+  ]
+}
