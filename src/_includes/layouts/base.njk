@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 	{% include "../vitals/head.njk"%}
+	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<div id="Header">
-				{% include "../vitals/header.njk"%}
-			</div>
+			{% include "../vitals/header.njk"%}
 
-			<div class="seperator" id="Content">
+			<div id="Content">
 				{{ content | safe }}
 			</div>
 
-			<div class="seperator" id="Footer">
-				{% include "../vitals/footer.njk"%}
-			</div>
+			{% include "../vitals/footer.njk"%}
 		</div>
 	</body>
 </html>

@@ -67,8 +67,11 @@ a:visited {
   margin-top: auto;
 }
 
-// Separator Styles
-.seperator {
+header {
+  border-bottom: dotted;
+}
+
+footer {
   border-top: dotted;
 }
 
@@ -92,7 +95,7 @@ a:visited {
 
 .title {
   font-size: $nav-font-size;
-  margin-left: 5%;
+  text-decoration: none;
 }
 
 .title-container {
@@ -104,7 +107,6 @@ a:visited {
   flex: 1 1 auto;
   min-width: 200px;
   text-align: right;
-  margin-bottom: 2.5%;
 }
 
 .icons {

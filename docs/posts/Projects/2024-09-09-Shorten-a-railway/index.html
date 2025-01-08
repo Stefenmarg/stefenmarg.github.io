@@ -69,13 +69,13 @@
 
     <title>Shorten-a-railway | Stefanos M.</title>
 </head>
+	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<div id="Header">
-				<header>
+			<header>
 	<div class="container">
 		<div class="title-container" id="Title">
-			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
 		</div>
 		<div class="nav-container" id="NavigationPane">
 			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
@@ -95,16 +95,13 @@
 	</div>
 </header>
 
-			</div>
 
-			<div class="seperator" id="Content">
-				
-<h2> Shorten-a-railway </h2>
-
-<h4> Written by: Stefenmarg on 9/9/2024 </h4>
-
-<div class="page" id="Page">
-	<h1>What is <a href="https://github.com/Stefenmarg/Shorten-A-Railway">'Shorten-a-railway'</a></h1>
+			<div id="Content">
+				<article>
+	<h2> Shorten-a-railway </h2>
+	<h4><span> Written by: Stefenmarg on 9/9/2024; read time: ~2 min</span></h4>
+	<div class="page" id="Page">
+		<h1>What is <a href="https://github.com/Stefenmarg/Shorten-A-Railway">'Shorten-a-railway'</a></h1>
 <p>Shorten-a-railway is a url sorten-er service that runs it's backend server with NodeJS.
 It makes use of ExpressJS, SQLite3 and the FS module to function.</p>
 <p>It was build in a bit over a week since there were some minor accidents in the development process like:</p>
@@ -127,11 +124,13 @@ It makes use of ExpressJS, SQLite3 and the FS module to function.</p>
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/Shorten/Shorten_a_railway_notes.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-</div>
+
+		<a id="NavigationEntry" class="nav-links" onclick="history.back()"> <i class="hover-animate"> << Go back. </i> </a>
+	</div>
+</article>
 			</div>
 
-			<div class="seperator" id="Footer">
-				<footer>
+			<footer>
 	<div class="cst_nav center" id="SocialsPane">
 		<nav>
 			
@@ -152,7 +151,6 @@ It makes use of ExpressJS, SQLite3 and the FS module to function.</p>
 		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
-			</div>
 		</div>
 	</body>
 </html>

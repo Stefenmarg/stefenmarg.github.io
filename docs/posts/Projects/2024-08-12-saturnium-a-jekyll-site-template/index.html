@@ -69,13 +69,13 @@
 
     <title>Saturnium Ruby, a simple jekyll site template | Stefanos M.</title>
 </head>
+	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<div id="Header">
-				<header>
+			<header>
 	<div class="container">
 		<div class="title-container" id="Title">
-			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
 		</div>
 		<div class="nav-container" id="NavigationPane">
 			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
@@ -95,16 +95,13 @@
 	</div>
 </header>
 
-			</div>
 
-			<div class="seperator" id="Content">
-				
-<h2> Saturnium Ruby, a simple jekyll site template </h2>
-
-<h4> Written by: Stefenmarg on 8/12/2024 </h4>
-
-<div class="page" id="Page">
-	<h1>What is <a href="https://stefenmarg.github.io/SaturniumRuby/">'Saturnium Ruby aka Saturnium'</a></h1>
+			<div id="Content">
+				<article>
+	<h2> Saturnium Ruby, a simple jekyll site template </h2>
+	<h4><span> Written by: Stefenmarg on 8/12/2024; read time: ~2 min</span></h4>
+	<div class="page" id="Page">
+		<h1>What is <a href="https://stefenmarg.github.io/SaturniumRuby/">'Saturnium Ruby aka Saturnium'</a></h1>
 <p>Saturnium Ruby is a simple jekyll site template that can be easily modified to fit your needs. It is very flexible and consists of HTML, Markdown, JavaScript, and CSS.</p>
 <p>This template falls under the MIT License, which can also be found in the root of the site's <a href="https://github.com/stefenmarg/SaturniumRuby">repository</a>.</p>
 <p>Comprehensive documentation of the project can be found in the <a href="https://stefenmarg.github.io/SaturniumRuby/about/">About section</a> of the site.</p>
@@ -125,11 +122,13 @@ social media icons.</p>
 <li>Stefanos M.</li>
 </ul>
 
-</div>
+
+		<a id="NavigationEntry" class="nav-links" onclick="history.back()"> <i class="hover-animate"> << Go back. </i> </a>
+	</div>
+</article>
 			</div>
 
-			<div class="seperator" id="Footer">
-				<footer>
+			<footer>
 	<div class="cst_nav center" id="SocialsPane">
 		<nav>
 			
@@ -150,7 +149,6 @@ social media icons.</p>
 		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
-			</div>
 		</div>
 	</body>
 </html>

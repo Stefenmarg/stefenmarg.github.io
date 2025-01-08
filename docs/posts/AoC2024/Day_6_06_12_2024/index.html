@@ -69,13 +69,13 @@
 
     <title>Advent of Cyber 2024 - Day 6 | Stefanos M.</title>
 </head>
+	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<div id="Header">
-				<header>
+			<header>
 	<div class="container">
 		<div class="title-container" id="Title">
-			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
 		</div>
 		<div class="nav-container" id="NavigationPane">
 			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
@@ -95,16 +95,13 @@
 	</div>
 </header>
 
-			</div>
 
-			<div class="seperator" id="Content">
-				
-<h2> Advent of Cyber 2024 - Day 6 </h2>
-
-<h4> Written by: Stefenmarg on 12/6/2024 </h4>
-
-<div class="page" id="Page">
-	<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/63588b5ef586912c7d03c4f0/room-content/63588b5ef586912c7d03c4f0-1730728443161.png">
+			<div id="Content">
+				<article>
+	<h2> Advent of Cyber 2024 - Day 6 </h2>
+	<h4><span> Written by: Stefenmarg on 12/6/2024; read time: ~1 min</span></h4>
+	<div class="page" id="Page">
+		<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/63588b5ef586912c7d03c4f0/room-content/63588b5ef586912c7d03c4f0-1730728443161.png">
 <h3>Topic Covered: Sandboxes</h3>
 <p>There are malware out there that are able to run only on real machines and I've never relly wondered on how that was done; until today where the challenge showcased some code snippetes in C that was able to recognise wether a machine was a VM or not simply based on some registry keys.</p>
 <p>Additionally, new tools were used today! First was Yara an EDR system that can identify and classify malware based on custom rules that helps detect malicious code; and  then there is FLOSS that is a tool that extracts obfiscated strings from malware binaries with similar functionality to the strings command that can be found on unix systems.</p>
@@ -112,11 +109,13 @@
 <p>For the second task you will need to simply provide to floss.exe the above mentioned malware file and then find the hidden flag while searching in the output of the program.</p>
 <p>Today's challenge as a bit easy but that means tomorrow's is gonna be very fun!</p>
 
-</div>
+
+		<a id="NavigationEntry" class="nav-links" onclick="history.back()"> <i class="hover-animate"> << Go back. </i> </a>
+	</div>
+</article>
 			</div>
 
-			<div class="seperator" id="Footer">
-				<footer>
+			<footer>
 	<div class="cst_nav center" id="SocialsPane">
 		<nav>
 			
@@ -137,7 +136,6 @@
 		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
-			</div>
 		</div>
 	</body>
 </html>

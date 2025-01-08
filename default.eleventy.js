@@ -4,6 +4,7 @@ const Domains = require('./config/domains.json');
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const xmlPlugin = require("eleventy-xml-plugin");
+const readingTime = require('eleventy-plugin-reading-time');
 
 const registerCollections = require('./modules/collections');
 const addWatchTarget = require('./modules/watchTarget');
@@ -16,6 +17,7 @@ module.exports = function(eleventyConfig) {
     //All the plugins
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(xmlPlugin);
+    eleventyConfig.addPlugin(readingTime);
 
     //Filters that are used in the site
     eleventyConfig.addFilter("dateToRfc2822", function(dateObj) {

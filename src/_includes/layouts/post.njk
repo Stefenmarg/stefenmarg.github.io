@@ -1,11 +1,12 @@
 ---
 layout: 'layouts/base.njk'
 ---
+<article>
+	<h2> {{title}} </h2>
+	<h4><span> Written by: {{ author }} on {{ date | dateToLocaleDateString}}; read time: ~{{ content | readingTime }}</span></h4>
+	<div class="page" id="Page">
+		{{ content | safe }}
 
-<h2> {{title}} </h2>
-
-<h4> Written by: {{ author }} on {{ date | dateToLocaleDateString}} </h4>
-
-<div class="page" id="Page">
-	{{ content | safe }}
-</div>
+		<a id="NavigationEntry" class="nav-links" onclick="history.back()"> <i class="hover-animate"> << Go back. </i> </a>
+	</div>
+</article>

@@ -69,13 +69,13 @@
 
     <title>Version 2.0.2 | Stefanos M.</title>
 </head>
+	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<div id="Header">
-				<header>
+			<header>
 	<div class="container">
 		<div class="title-container" id="Title">
-			<i href="/"><h2 class="title">Stefanos M.</h2></i>
+			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
 		</div>
 		<div class="nav-container" id="NavigationPane">
 			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
@@ -95,16 +95,13 @@
 	</div>
 </header>
 
-			</div>
 
-			<div class="seperator" id="Content">
-				
-<h2> Version 2.0.2 </h2>
-
-<h4> Written by:  on 12/4/2024 </h4>
-
-<div class="page" id="Page">
-	<h2>[2.0.2] - 2024-12-04</h2>
+			<div id="Content">
+				<article>
+	<h2> Version 2.0.2 </h2>
+	<h4><span> Written by:  on 12/4/2024; read time: ~1 min</span></h4>
+	<div class="page" id="Page">
+		<h2>[2.0.2] - 2024-12-04</h2>
 <h3>This site is now open source!</h3>
 <h3>Added</h3>
 <ul>
@@ -117,6 +114,8 @@
 <li>New funxtion that updates the copyright date automatically.</li>
 <li>New layout for posts.</li>
 <li>New filter for times in the post layout.</li>
+<li>Added post reading time to the posts.</li>
+<li>Added a back button on the post layout.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
@@ -127,6 +126,7 @@
 <h3>Fixed</h3>
 <ul>
 <li>The urls are now correctly set up.</li>
+<li>All navigation items are centered vertically in the header.</li>
 </ul>
 <h3>Removed</h3>
 <ul>
@@ -136,11 +136,13 @@
 <li>The unused module dotenv from configuration files</li>
 </ul>
 
-</div>
+
+		<a id="NavigationEntry" class="nav-links" onclick="history.back()"> <i class="hover-animate"> << Go back. </i> </a>
+	</div>
+</article>
 			</div>
 
-			<div class="seperator" id="Footer">
-				<footer>
+			<footer>
 	<div class="cst_nav center" id="SocialsPane">
 		<nav>
 			
@@ -161,7 +163,6 @@
 		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
-			</div>
 		</div>
 	</body>
 </html>
