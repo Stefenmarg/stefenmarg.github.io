@@ -2,7 +2,6 @@
 title: 'About me'
 layout: 'layouts/base.njk'
 permalink: '/about/'
-assetsDir: '/assets/CV'
 ---
 
 ## {{title}}
@@ -17,20 +16,9 @@ You can find me on social media, mostly the ones listed in the footer of the sit
 
 I have recently completed Advent of Code from TryHackMe and got a certificate proving my understanding of Cyber Security fundementals.
 
-<object data="{{ assetsDir }}/Resume.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="{{ assetsDir }}/Resume.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ assetsDir }}/Resume.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
 
-<object data="{{ assetsDir }}/THM-7JXTTPP7BT.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="{{ url }}{{ baseurl }}/assets/CV/THM-7JXTTPP7BT.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ url }}{{ baseurl }}/assets/CV/THM-7JXTTPP7BT.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+{% pdf_view "/assets/CV/Resume.pdf" %}
 
-<object data="{{ assetsDir }}/Matlab_fundementals.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="{{ assetsDir }}/Matlab_fundementals.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ assetsDir }}/Matlab_fundementals.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+{% pdf_view "/assets/CV/THM-7JXTTPP7BT.pdf" %}
+
+{% pdf_view "/assets/CV/Matlab_fundementals.pdf" %}

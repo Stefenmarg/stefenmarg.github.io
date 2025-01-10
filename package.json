@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build_prod:sass": "npx sass ./src/scss/global.scss ./docs/css/global.css --style=compressed",
-    "watch_dev:sass": "npx sass ./src/scss/global.scss ./dev/css/global.css --style=compressed",
+    "build_dev:sass": "npx sass ./src/scss/global.scss ./dev/css/global.css --style=compressed",
+    "watch_dev:sass": "npx sass ./src/scss/global.scss ./dev/css/global.css --style=compressed -w",
     "build_prod:webpack": "npx webpack --config default.webpack.js",
     "build_dev:webpack": "npx webpack --config default.webpack.js",
     "watch_dev:webpack": "npx webpack -w --config default.webpack.js",
@@ -27,6 +28,7 @@
     "eleventy-plugin-reading-time": "^0.0.1",
     "eleventy-xml-plugin": "^0.1.0",
     "npm-run-all": "^4.1.5",
+    "sass-migrator": "^2.3.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^4.10.0"
   }

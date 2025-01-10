@@ -1,0 +1,21 @@
+@use '../variables.scss';
+
+// Copyright Styles
+.Copyright {
+  font-size: variables.$small-font-size;
+}
+
+// Ribbon Styles
+.Ribbon {
+  border-top-style: solid;
+  border-top-width: 8px;
+  border-top-color: variables.$border-color;
+  margin-top: auto;
+}
+
+//Image Styles
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}

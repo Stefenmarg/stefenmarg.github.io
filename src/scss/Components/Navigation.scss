@@ -1,0 +1,63 @@
+@use '../variables.scss';
+
+// Navigation Styles
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: variables.$nav-font-size;
+  text-decoration: none;
+}
+
+.title-container {
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.nav-container {
+  flex: 1 1 auto;
+  min-width: 200px;
+  text-align: right;
+}
+
+.icons {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.nav-links {
+  color: variables.$text-color;
+  margin-left: variables.$nav-link-margin-left;
+  text-decoration: none;
+  font-size: variables.$nav-link-font-size;
+}
+
+.nav-links:visited {
+  color: variables.$text-color;
+}
+
+// Pagination Styles
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: variables.$pagination-gap;
+  margin-top: 20px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: variables.$pagination-padding;
+  background-color: variables.$pagination-background;
+  color: variables.$text-color;
+  border-radius: 5px;
+  font-size: variables.$pagination-font-size;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: variables.$pagination-hover-background;
+}
