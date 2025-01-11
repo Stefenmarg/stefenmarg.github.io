@@ -1,61 +1,41 @@
 require('dotenv').config(); // set enviroment=Dev | set enviroment=Prod
 
-const Domains = require('./config/domains.json');
+//Configuration data for the builds.
+const Enviroments = require('./config/enviroments.json');
 
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const xmlPlugin = require("eleventy-xml-plugin");
-const readingTime = require('eleventy-plugin-reading-time');
-
-const registerCollections = require('./modules/collections');
-const addWatchTarget = require('./modules/watchTarget');
-const addPassthroughCopies = require('./modules/passThrough');
-const addTemplateFormat = require('./modules/addTemplateFormat');
+//Code snippets in their own modules.
+const SetPlugins = require('./modules/Plugins');
+const SetFilters = require('./modules/Filters');
+const SetShortcodes = require('./modules/Shortcodes');
+const RegisterCollections = require('./modules/PostProcessing');
+const RegisterFileEvents = require('./modules/FileOperations');
 
 module.exports = function(eleventyConfig) {
     const enviroment = process.env.enviroment || 'Dev';
 
-    //All the plugins
-    eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.addPlugin(xmlPlugin);
-    eleventyConfig.addPlugin(readingTime);
+    //Setup the filters for the site.
+    SetFilters(eleventyConfig);
 
-    //Filters that are used in the site
-    eleventyConfig.addFilter("dateToRfc2822", function(dateObj) {
-        return new Date(dateObj).toUTCString();
-    });
+    //Setup the various plugins that are used by the site.
+    SetPlugins(eleventyConfig);
+
+    //Register the shortcodes used by the site.
+    SetShortcodes(eleventyConfig);
+
+    //Register the collections and the posts;
+    RegisterCollections(eleventyConfig, './src/posts');
+
+    //Setup the WatchTargets and the DirectCopies to the output.
+    RegisterFileEvents(eleventyConfig);
     
-    eleventyConfig.addFilter("dateToLocaleDateString", function(dateObj) {
-        return new Date(dateObj).toLocaleDateString();
-    });
+    //Set the variables for the site based on the enviroment of the build process.
+    eleventyConfig.addGlobalData("url", `${Enviroments[`${enviroment}`].url}`);
+    eleventyConfig.addGlobalData("baseurl", `${Enviroments[`${enviroment}`].baseurl}`);
 
-    eleventyConfig.addShortcode("warning", function(content) {
-        return `<div class='sign_base sign_warning'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Warning! </p> ${ content } </div>`;
-    });
-
-    eleventyConfig.addShortcode("alert", function(content) {
-        return `<div class='sign_base sign_alert'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Alert! </p> ${ content } </div>`;
-    });
-
-    eleventyConfig.addShortcode("info", function(content) {
-        return `<div class='sign_base sign_info'><p class="sign_title"><i class="fa-sm fa-solid fa-circle-info"></i> Please note: </p> ${ content } </div>`;
-    });
-
-    eleventyConfig.addShortcode("pdf_view", function(content) {
-        return `<object data="${content}" type="application/pdf" width="auto" height="auto" data="${content}"> <p>This browser does not support PDFs. Please download the PDF to view it: <a href="${content}">Download PDF</a>.</p></object>`;
-    })
-
-    //Collection management
-    registerCollections(eleventyConfig, './src/posts');
-    addWatchTarget(eleventyConfig);
-    addPassthroughCopies(eleventyConfig);
-    addTemplateFormat(eleventyConfig);
-
-    eleventyConfig.addGlobalData("url", `${Domains[`${enviroment}`].url}`);
-    eleventyConfig.addGlobalData("baseurl", `${Domains[`${enviroment}`].baseurl}`);
-
+    //Output and input setting for the builder.
 	return {
         dir: {
-        	output: `${Domains[`${enviroment}`].output}`,
+        	output: `${Enviroments[`${enviroment}`].output}`,
             input: "src"
         }
     };

@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 
-async function registerCollections(eleventyConfig, post_dir) {
+async function RegisterCollections(eleventyConfig, post_dir) {
   try {
     const entries = await fs.readdir(`${post_dir}`);
     await Promise.all(entries.map(async (entry) => {
@@ -19,4 +19,4 @@ async function registerCollections(eleventyConfig, post_dir) {
   }
 }
 
-module.exports = registerCollections;
+module.exports = RegisterCollections;

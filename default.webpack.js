@@ -3,17 +3,17 @@ require('dotenv').config(); // Load environment variables from .env file
 const path = require('path');
 
 const enviroment = process.env.enviroment || 'Dev';
-const Domains = require('./config/domains.json');
+const Enviroments = require('./config/enviroments.json');
 
-if (!Domains[enviroment]) {
-  console.error(`Error: The environment '${enviroment}' is not defined in domains.json`);
+if (!Enviroments[enviroment]) {
+  console.error(`Error: The environment '${enviroment}' is not defined in Enviroments.json`);
   process.exit(1); // Stop the process if the environment is invalid
 }
 
 module.exports = {
   entry: './src/js/global.js',
   output: {
-    path: path.resolve(__dirname, `./${Domains[enviroment].output}/js`),
+    path: path.resolve(__dirname, `./${Enviroments[enviroment].output}/js`),
     filename: 'global.bundle.js',
     library: 'Web',
     libraryTarget: 'var'

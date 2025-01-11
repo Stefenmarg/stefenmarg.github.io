@@ -18,7 +18,7 @@ Overall, this site has gotten some updates that have made better the overall bui
 
 The files in the `config` folder found in the root of the project controls all the basic configurations of files that could easily be implemented in a simple loop for convinience. This implementation has thus allowed us to make the building process easier making use of enviroment variables and making use of only the required functions based on the enviroment.
 
-A must have in this enviroment is the automation of most of the important functions of the site like the post collection based on the folders inside the `post` folder in the root. This is achieved by using site modules that can be found in the `modules` folder in the root of the project. It allows the eleventy configuration file to be less cluttered and to have it run functions that correspond to the set eleventy config function. It may not be the best solution but it is a way to run functions without needing to have a file over 200 lines. Optimisation and understanding of the way that modules work is one of the main points of the system used. 
+A must have in this enviroment is the automation of most of the important functions of the site like the post collection based on the folders inside the `post` folder in the root. This is achieved by using site modules that can be found in the `modules` folder in the root of the project. It allows the eleventy configuration file to be less cluttered and to have it run functions that correspond to the set eleventy config function. It may not be the best solution but it is a way to run functions without needing to have a file over 200 lines. Optimisation and understanding of the way that modules work is one of the main points of the system used.
 
 The files in the `config` directory mostly has to do with functions that need lists thus json was chosen, a simple way to read the file and use it's context in a way that benefits all.
 
@@ -31,6 +31,7 @@ Other updates on this site on the font matter has to do with ✨ notification si
 {% alert "This is an alert!!" %}
 
 Plus, the recenty added `pdf_view` shortcode that takes the following html statement to a simple '{ % pdf_view <path_pdf> % }' (the data showing in as undefined is there due to not having a proper call to the shortcode)
+
 ```html
 {% pdf_view %}
 ```
