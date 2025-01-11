@@ -6,7 +6,6 @@ const Enviroments = require('./config/enviroments.json');
 //Code snippets in their own modules.
 const SetPlugins = require('./modules/Plugins');
 const SetFilters = require('./modules/Filters');
-const SetShortcodes = require('./modules/Shortcodes');
 const RegisterCollections = require('./modules/PostProcessing');
 const RegisterFileEvents = require('./modules/FileOperations');
 
@@ -20,7 +19,21 @@ module.exports = function(eleventyConfig) {
     SetPlugins(eleventyConfig);
 
     //Register the shortcodes used by the site.
-    SetShortcodes(eleventyConfig);
+    eleventyConfig.addShortcode("warning", function(content) {
+        return `<div class='sign_base sign_warning'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Warning! </p> ${ content } </div>`;
+    });
+
+    eleventyConfig.addShortcode("alert", function(content) {
+        return `<div class='sign_base sign_alert'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Alert! </p> ${ content } </div>`;
+    });
+
+    eleventyConfig.addShortcode("info", function(content) {
+        return `<div class='sign_base sign_info'><p class="sign_title"><i class="fa-sm fa-solid fa-circle-info"></i> Please note: </p> ${ content } </div>`;
+    });
+
+    eleventyConfig.addShortcode("pdf_view", function(content) {
+        return `<iframe src="${content}" width="100%" height="600px"> This browser does not support PDFs. Please download the PDF to view it:  [Download the PDF](${content}) </iframe>`
+    });
 
     //Register the collections and the posts;
     RegisterCollections(eleventyConfig, './src/posts');

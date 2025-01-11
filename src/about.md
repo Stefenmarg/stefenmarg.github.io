@@ -17,8 +17,8 @@ You can find me on social media, mostly the ones listed in the footer of the sit
 I have recently completed Advent of Code from TryHackMe and got a certificate proving my understanding of Cyber Security fundementals.
 
 
-{% pdf_view "/assets/CV/Resume.pdf" %}
+{% pdf_view "../assets/CV/Resume.pdf" %}
 
-{% pdf_view "/assets/CV/THM-7JXTTPP7BT.pdf" %}
+{% pdf_view "../assets/CV/THM-7JXTTPP7BT.pdf" %}
 
-{% pdf_view "/assets/CV/Matlab_fundementals.pdf" %}
+{% pdf_view "../assets/CV/Matlab_fundementals.pdf" %}

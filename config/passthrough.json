@@ -1,6 +1,6 @@
 {
   "paths": [
-    "../src/assets",
-    "../src/js/snowstorm.js"
+    "./src/assets/",
+    "./src/js/snowstorm.js"
   ]
 }
