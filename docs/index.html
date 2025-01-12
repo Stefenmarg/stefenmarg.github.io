@@ -71,33 +71,26 @@
 	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<header>
-	<div class="container">
-
-		<div class="title-container" id="Title">
-			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
-		</div>
-		
-		<div class="nav-container" id="NavigationPane">
-			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
-			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			<header class="Navigation">
+	<a class="Title center" href="/"><h2>Stefanos M.</h2></a>
 	
-			
-				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/about/"><i class="hover-animate"> About me </i></a>
-			
-		</div>
+	<div class="NavigationPane">
+		<i class="hover-animate" id="snowFlakeButton" onclick="SnowManager.toggleSnow()"></i>
+		<i class="hover-animate fa-regular fa-sun" onclick="ThemeManager.toggleTheme()"></i>
 
+		
+			<a class="NavigationEntry" href="/"><i class="hover-animate"> Home </i></a>
+		
+			<a class="NavigationEntry" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
+		
+			<a class="NavigationEntry" href="/projects/"><i class="hover-animate"> Projects </i></a>
+		
+			<a class="NavigationEntry" href="/about/"><i class="hover-animate"> About me </i></a>
+		
 	</div>
 </header>
 
-
-			<div id="Content">
+			<div class="Content">
 				
 <div class="page" id="Page">
 
@@ -106,8 +99,9 @@
 <p>This site will primarily function as a personal portfolio to highlight my projects and any scientific papers I may publish. Additionally, it will serve as a repository for my resume and other certifications, making them easily accessible to recruiters.</p>
 <p>All the projects featured here are created during my free time. While tips are not required, they would be greatly appreciated as a gesture of support!</p>
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#8d2c3e', 'X8X417UEDG');kofiwidget2.draw();</script> 
-<h3>How is this site built?</h3>
-<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> which infact is the service that I use for the social media icons on the footer. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one file.</p>
+<h3>Information about this site.</h3>
+<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> the service that I use for the social media icons on the footer of the site. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one neat and compact file. Additionally, this site has a repository that can be found <a href="https://github.com/Stefenmarg/stefenmarg.github.io">here</a> and it has everything that you would need to make a site for yourself.</p>
+<p>This site is using cookies for the site theme, the snowflakes during the holidays and analytics collection for the site. You can see the Cookie Policy <a href="/cookies">here!</a></p>
 
 
 	<h2> Most recent posts: </h2>
@@ -134,24 +128,24 @@
 			</div>
 
 			<footer>
-	<div class="cst_nav center" id="SocialsPane">
-		<nav>
+	<div class="Navigation" id="SocialsPane">
+		<nav class="NavigationPane">
 			
-				<a id="SocialsIcon" class="nav-links" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://stefenmarg.github.io/feed.xml"><i class="fa-solid fa-rss hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://stefenmarg.github.io/feed.xml"><i class="fa-solid fa-rss hover-animate"></i></a>
 			
 		</nav>
 	</div>
-
+	
 	<div class="center Copyright" id="Copyright">
-		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
+		Copyright © <div id="copyright_date"> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
 		</div>

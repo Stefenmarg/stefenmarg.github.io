@@ -1,13 +1,13 @@
 <footer>
-	<div class="cst_nav center" id="SocialsPane">
-		<nav>
+	<div class="Navigation" id="SocialsPane">
+		<nav class="NavigationPane">
 			{% for item in socials %}
-				<a id="SocialsIcon" class="nav-links" href="{{item.url}}"><i class="{{item.icon}} hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="{{item.url}}"><i class="{{item.icon}} hover-animate"></i></a>
 			{% endfor %}
 		</nav>
 	</div>
-
+	
 	<div class="center Copyright" id="Copyright">
-		Copyright © <div id='copyright_date'> </div>  {{site.author.name}}. All rights reserved.
+		Copyright © <div id="copyright_date"> </div>  {{site.author.name}}. All rights reserved.
 	</div>
 </footer>

@@ -18,7 +18,7 @@ In this section posts about my activity on TryHackMe will be posted. Im new to t
     </a>
 </div>
 
-<div class="page" id="Page">
+<div id="Page">
 	<h2> Posts regarding TryHackMe: </h2>
 	{% for post in posts %}
 		<ul>
@@ -27,11 +27,11 @@ In this section posts about my activity on TryHackMe will be posted. Im new to t
 	{% endfor %}
 </div>
 
-<div class="pagination center">
+<div class="Pagination">
   {% if pagination.href.previous %}
-    <a class="previous" href="{{ pagination.href.previous }}">Newer posts</a>
+    <a href="{{ pagination.href.previous }}"> << Newer posts</a>
   {% endif %}
   {% if pagination.href.next %}
-    <a class="next" href="{{ pagination.href.next }}">Older posts</a>
+    <a href="{{ pagination.href.next }}">Older posts >> </a>
   {% endif %}
 </div>

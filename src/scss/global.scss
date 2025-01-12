@@ -1,4 +1,5 @@
 @use 'variables.scss';
+@use 'animations.scss';
 @use './Components/Navigation.scss';
 @use './Components/Details.scss';
 @use './Components/Signs.scss';
@@ -13,14 +14,6 @@ body {
   margin-right: 13%;
 }
 
-// Links Styles
-a {
-  color: variables.$link-color;
-}
-
-a:visited {
-  color: variables.$link-visited-color;
-}
 
 header {
   border-bottom: dotted;
@@ -35,18 +28,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: variables.$container-width;
-  padding: variables.$container-padding;
   display: flex;
   width: fit-content;
 }
 
-// Hover Animation Styles
-.hover-animate {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+.Content {
+  a {
+    color: variables.$link-color;
+  }
 
-.hover-animate:hover {
-  transform: scale(1.2);
-  color: variables.$hover-color;
-  cursor: pointer;
+  a:visited {
+    color: variables.$link-visited-color;
+  }
+
 }

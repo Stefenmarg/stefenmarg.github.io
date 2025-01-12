@@ -1,63 +1,53 @@
 @use '../variables.scss';
 
-// Navigation Styles
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+/*
+Navigation is the top and the bottom part of the site that contains icons and 
+texts that redirects you to the other pages in or out of the site.
+*/
+.Navigation {
+  .Title {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: variables.$text-color;
+  }
+  .NavigationPane {
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .NavigationEntry {
+    color: variables.$text-color;
+    margin-left: variables.$nav-link-margin-left;
+    text-decoration: none;    
+  }
+  .NavigationEntry:hover {
+    transition: background-color 0.3s;
+  }
+  .NavigationEntry:visited {
+    color: variables.$text-color;
+  }
 }
 
-.title {
-  font-size: variables.$nav-font-size;
-  text-decoration: none;
-}
-
-.title-container {
-  flex: 1 1 auto;
-  min-width: 200px;
-}
-
-.nav-container {
-  flex: 1 1 auto;
-  min-width: 200px;
-  text-align: right;
-}
-
-.icons {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.nav-links {
-  color: variables.$text-color;
-  margin-left: variables.$nav-link-margin-left;
-  text-decoration: none;
-  font-size: variables.$nav-link-font-size;
-}
-
-.nav-links:visited {
-  color: variables.$text-color;
-}
-
-// Pagination Styles
-.pagination {
+/*
+Pagination is the bottom buttons that get shown when a page has reached a limit of posts
+set by the user as to not clutter a page a huge amount of posts.
+*/
+.Pagination {
   display: flex;
   justify-content: center;
   gap: variables.$pagination-gap;
   margin-top: 20px;
-}
-
-.pagination a {
-  text-decoration: none;
-  padding: variables.$pagination-padding;
-  background-color: variables.$pagination-background;
-  color: variables.$text-color;
-  border-radius: 5px;
-  font-size: variables.$pagination-font-size;
-  transition: background-color 0.3s;
-}
-
-.pagination a:hover {
-  background-color: variables.$pagination-hover-background;
+  a {
+    color: variables.$text-color !important;
+    text-decoration: none;
+    padding: variables.$pagination-padding;
+    background-color: variables.$pagination-background;
+    border-radius: 5px;
+    font-size: variables.$pagination-font-size;
+    transition: background-color 0.3s;
+  }
+  a:hover {
+    background-color: variables.$pagination-hover-background;
+  }
 }

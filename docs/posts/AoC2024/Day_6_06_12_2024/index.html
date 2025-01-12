@@ -71,33 +71,26 @@
 	
 	<body class="Ribbon" id='Body'>
 		<div>
-			<header>
-	<div class="container">
-
-		<div class="title-container" id="Title">
-			<a class="title" href="/"><h2 class="title">Stefanos M.</h2></a>
-		</div>
-		
-		<div class="nav-container" id="NavigationPane">
-			<i id="snowFlakeButton" class='icons hover-animate' onclick="SnowManager.toggleSnow()"></i>
-			<i class='icons fa-regular fa-sun hover-animate' onclick="ThemeManager.toggleTheme()"></i>
+			<header class="Navigation">
+	<a class="Title center" href="/"><h2>Stefanos M.</h2></a>
 	
-			
-				<a id="NavigationEntry" class="nav-links" href="/"><i class="hover-animate"> Home </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/projects/"><i class="hover-animate"> Projects </i></a>
-			
-				<a id="NavigationEntry" class="nav-links" href="/about/"><i class="hover-animate"> About me </i></a>
-			
-		</div>
+	<div class="NavigationPane">
+		<i class="hover-animate" id="snowFlakeButton" onclick="SnowManager.toggleSnow()"></i>
+		<i class="hover-animate fa-regular fa-sun" onclick="ThemeManager.toggleTheme()"></i>
 
+		
+			<a class="NavigationEntry" href="/"><i class="hover-animate"> Home </i></a>
+		
+			<a class="NavigationEntry" href="/thm/"><i class="hover-animate"> TryHackMe </i></a>
+		
+			<a class="NavigationEntry" href="/projects/"><i class="hover-animate"> Projects </i></a>
+		
+			<a class="NavigationEntry" href="/about/"><i class="hover-animate"> About me </i></a>
+		
 	</div>
 </header>
 
-
-			<div id="Content">
+			<div class="Content">
 				<article>
 	<h2> Advent of Cyber 2024 - Day 6 </h2>
 	<h4><span> Written by: Stefenmarg on 12/6/2024. Read time: ~1 min</span></h4>
@@ -117,24 +110,24 @@
 			</div>
 
 			<footer>
-	<div class="cst_nav center" id="SocialsPane">
-		<nav>
+	<div class="Navigation" id="SocialsPane">
+		<nav class="NavigationPane">
 			
-				<a id="SocialsIcon" class="nav-links" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://github.com/stefenmarg"><i class="fa-brands fa-github hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://www.instagram.com/stefenmarg"><i class="fa-brands fa-instagram hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://bsky.app/profile/stefenmarg.bsky.social"><i class="fa-brands fa-bluesky hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://www.linkedin.com/in/stefenmarg"><i class="fa-brands fa-linkedin hover-animate"></i></a>
 			
-				<a id="SocialsIcon" class="nav-links" href="https://stefenmarg.github.io/feed.xml"><i class="fa-solid fa-rss hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry" href="https://stefenmarg.github.io/feed.xml"><i class="fa-solid fa-rss hover-animate"></i></a>
 			
 		</nav>
 	</div>
-
+	
 	<div class="center Copyright" id="Copyright">
-		Copyright © <div id='copyright_date'> </div>  Stefanos Margaritis. All rights reserved.
+		Copyright © <div id="copyright_date"> </div>  Stefanos Margaritis. All rights reserved.
 	</div>
 </footer>
 		</div>
