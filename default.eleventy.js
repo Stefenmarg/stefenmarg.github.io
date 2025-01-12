@@ -1,7 +1,7 @@
 require('dotenv').config(); // set enviroment=Dev | set enviroment=Prod
 
 //Configuration data for the builds.
-const Enviroments = require('./config/enviroments.json');
+const Enviroments = require('./Configs/enviroments.json');
 
 //Code snippets in their own modules.
 const SetPlugins = require('./Modules/Plugins');

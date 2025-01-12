@@ -1,6 +1,6 @@
-const WatchTarget = require('../config/watch_target.json');
-const Passthrough = require('../config/passthrough.json');
-const templateFormat = require('../config/template_formats.json');
+const WatchTarget = require('../Configs/watch_target.json');
+const Passthrough = require('../Configs/passthrough.json');
+const templateFormat = require('../Configs/template_formats.json');
 
 function RegisterFileEvents(eleventyConfig) {
     if (Array.isArray(WatchTarget.paths)) {
