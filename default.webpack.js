@@ -1,9 +1,8 @@
 require('dotenv').config(); // Load environment variables from .env file
 
 const path = require('path');
-
 const enviroment = process.env.enviroment || 'Dev';
-const Enviroments = require('./config/enviroments.json');
+const Enviroments = require('./Configs/enviroments.json');
 
 if (!Enviroments[enviroment]) {
   console.error(`Error: The environment '${enviroment}' is not defined in Enviroments.json`);

@@ -4,10 +4,10 @@ require('dotenv').config(); // set enviroment=Dev | set enviroment=Prod
 const Enviroments = require('./config/enviroments.json');
 
 //Code snippets in their own modules.
-const SetPlugins = require('./modules/Plugins');
-const SetFilters = require('./modules/Filters');
-const RegisterCollections = require('./modules/PostProcessing');
-const RegisterFileEvents = require('./modules/FileOperations');
+const SetPlugins = require('./Modules/Plugins');
+const SetFilters = require('./Modules/Filters');
+const RegisterCollections = require('./Modules/PostProcessing');
+const RegisterFileEvents = require('./Modules/FileOperations');
 
 module.exports = function(eleventyConfig) {
     const enviroment = process.env.enviroment || 'Dev';
