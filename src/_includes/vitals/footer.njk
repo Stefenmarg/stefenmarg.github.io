@@ -1,8 +1,8 @@
-<footer>
-	<div class="Navigation" id="SocialsPane">
+<footer class="Navigation">
+	<div id="SocialsPane">
 		<nav class="NavigationPane">
 			{% for item in socials %}
-				<a id="SocialsIcon" class="NavigationEntry" href="{{item.url}}"><i class="{{item.icon}} hover-animate"></i></a>
+				<a id="SocialsIcon" class="NavigationEntry SocialsIcon" href="{{item.url}}"><i class="{{item.icon}} hover-animate"></i></a>
 			{% endfor %}
 		</nav>
 	</div>

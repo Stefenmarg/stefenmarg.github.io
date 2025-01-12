@@ -19,7 +19,7 @@ texts that redirects you to the other pages in or out of the site.
   .NavigationEntry {
     color: variables.$text-color;
     margin-left: variables.$nav-link-margin-left;
-    text-decoration: none;    
+    text-decoration: none;   
   }
   .NavigationEntry:hover {
     transition: background-color 0.3s;
