@@ -7,13 +7,12 @@
 // Body Styles
 body {
   font-family: variables.$font-family;
-  font-size: variables.$font-size;
+  font-size: variables.$large-font-size;
   background-color: variables.$background-color;
   color: variables.$text-color;
-  margin-left: 13%;
-  margin-right: 13%;
+  margin-left: variables.$Margin-content;
+  margin-right: variables.$Margin-content;
 }
-
 
 header {
   border-bottom: dotted;
@@ -24,7 +23,17 @@ footer {
   border-top: dotted;
 }
 
-// Center Styles
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+
+.pdf_document {
+  width: fit-content;
+  height: max-content;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -41,5 +50,4 @@ footer {
   a:visited {
     color: variables.$link-visited-color;
   }
-
 }

@@ -14,6 +14,12 @@ The 5 most recent versions of this site:
 	</ul>
 {% endfor %}
 
+### Information about this site.
+
+In the backend before the site is built into a static site we are using [Eleventy (11ty)](https://www.11ty.dev/) that has recently joined [Font Awesome](https://fontawesome.com/) the service that I use for the social media icons on the footer of the site. For bundling JavaScript code we are using [Webpack](https://www.npmjs.com/package/webpack) that bundles all the code in one neat and compact file. Additionally, this site has a repository that can be found [here]({{ site.repository }}) and it has everything that you would need to make a site for yourself.
+
+### Recent improvements.
+
 Overall, this site has gotten some updates that have made better the overall builing process, features are not limited on making a better and more organised eleventy config file by reading things like files to be watched or to be copied from a file instead of manually copy pasting the same piece of code just to do the same things 4 times in a row.
 
 The files in the `config` folder found in the root of the project controls all the basic configurations of files that could easily be implemented in a simple loop for convinience. This implementation has thus allowed us to make the building process easier making use of enviroment variables and making use of only the required functions based on the enviroment.
@@ -22,7 +28,8 @@ A must have in this enviroment is the automation of most of the important functi
 
 The files in the `config` directory mostly has to do with functions that need lists thus json was chosen, a simple way to read the file and use it's context in a way that benefits all.
 
-Other updates on this site on the font matter has to do with ✨ notification signs ✨ which are pretty neat. Below you can see a demo of the signs and how they are used in the backend.
+
+Other updates on this site on the font matter has to do with ✨ visuals ✨ for example the following signs introduced on `v2.0.2` which are pretty neat. 
 
 {% info "This is an information notice!" %}
 

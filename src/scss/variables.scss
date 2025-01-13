@@ -1,25 +1,61 @@
-// Variables
-$font-family: system-ui;
-$font-size: 1.15rem;
-
+//Body
 $background-color: rgb(0, 0, 0);
+$primary-color: #8d2c3e;
+$hover-color: rgb(207, 102, 121);
+$border-color: rgb(207, 102, 121);
+
+//Container
+$container-padding: 10px;
+$container-width: 50%;
+$container-max-width: 600px;
+
+//Text
+$font-family: system-ui;
+
+$large-font-size:1.3rem;
+$medium-font-size: 1.15rem;
+$standard-font-size: 1rem;
+$small-font-size: .85rem;
+
 $text-color: rgb(255, 255, 255);
 $link-color: rgb(141, 44, 62);
 $link-visited-color: rgb(207, 102, 121);
-$border-color: rgb(207, 102, 121);
-$primary-color: rgb(141, 44, 62);
-$hover-color: rgb(207, 102, 121);
 
-$small-font-size: small;
-$nav-font-size: 2.5rem;
-$nav-link-margin-left: 10px;
+//Margin
+$Margin-content: 13%;
 
+//Ribbon
+$Ribbon-color: rgb(207, 102, 121);
+$Ribbon-width: .5rem;
+
+//Pagination
 $pagination-gap: 20px;
 $pagination-padding: 10px;
 $pagination-font-size: 14px;
 $pagination-background: $primary-color;
 $pagination-hover-background: $hover-color;
 
-$container-padding: 10px;
-$container-width: 50%;
-$container-max-width: 600px;
+//Navigation
+$nav-font-size: 2.5rem;
+$nav-link-margin-left: 10px;
+
+//Signs
+$left-border-size: .5rem;
+$title-size: 1.25rem;
+$title-transparency: 35%;
+$background-transparency: 20%;
+
+//Alert sign.
+$color-alert: rgb(255, 0, 0);
+$color-alert_title: rgb(255, 0, 0, $title-transparency);
+$color-alert-back: rgb(255, 0, 0, $background-transparency);
+
+//Warning sign.
+$color-warning: rgb(255, 193, 7);
+$color-warning_title: rgb(255, 193, 7, $title-transparency);
+$color-warning-back: rgb(255, 193, 7, $background-transparency);
+
+//Infomation sign.
+$color-info: rgb(0, 0, 255);
+$color-info_title: rgb(0, 0, 255, $title-transparency);
+$color-info-back: rgb(0, 0, 255, $background-transparency);

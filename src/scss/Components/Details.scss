@@ -5,22 +5,19 @@
   font-size: variables.$small-font-size;
 }
 
-// Ribbon Styles
+/*
+Ribbon is the little line in the top of the site.
+*/
 .Ribbon {
   border-top-style: solid;
-  border-top-width: 8px;
-  border-top-color: variables.$border-color;
+  border-top-width: variables.$Ribbon-width;
+  border-top-color: variables.$Ribbon-color;
   margin-top: auto;
 }
 
-//Image Styles
-img {
-	height: auto;
-	max-width: 100%;
-	display: block;
-}
-
-.pdf_document {
-  width: fit-content;
-  height: max-content;
+.ProfilePhoto {
+  border-radius: 50%;
+  object-fit: fill;
+  max-width: 40%;
+  height: auto;
 }

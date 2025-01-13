@@ -1,24 +1,8 @@
 @use "sass:color";
 @use '../variables.scss';
 
-$left-border-size: .5rem;
-$title_transparency: 35%;
-$back_transparency: 20%;
-
-$color_alert: rgb(255, 0, 0);
-$color_warning: rgb(255, 193, 7);
-$color_info: rgb(0, 0, 255);
-
-$color_alert_title: rgb(255, 0, 0, $title_transparency);
-$color_warning_title: rgb(255, 193, 7, $title_transparency);
-$color_info_title: rgb(0, 0, 255, $title_transparency);
-
-$color_alert_back: rgb(255, 0, 0, $back_transparency);
-$color_warning_back: rgb(255, 193, 7, $back_transparency);
-$color_info_back: rgb(0, 0, 255, $back_transparency);
-
 .sign_title {
-    font-size: 1.25rem;
+    font-size: variables.$title-size;
     font-weight: bolder;
     font-style: italic;
     margin-block-start: 0em;
@@ -36,27 +20,25 @@ $color_info_back: rgb(0, 0, 255, $back_transparency);
 }
 
 .sign_alert {
-    border-left: $left-border-size solid $color_alert;
-    background-color: $color_alert_back;
+    border-left: variables.$left-border-size solid variables.$color-alert;
+    background-color: variables.$color-alert-back;
     p {
-        background-color: $color_alert_title;
+        background-color: variables.$color_alert_title;
     }
 }
-
 
 .sign_warning {
-    border-left: $left-border-size solid $color_warning;
-    background-color: $color_warning_back;
+    border-left: variables.$left-border-size solid variables.$color-warning;
+    background-color: variables.$color-warning-back;
     p {
-        background-color: $color_warning_title;
+        background-color: variables.$color-warning-title;
     }
 }
 
-
 .sign_info {
-    border-left: $left-border-size solid $color_info;
-    background-color: $color_info_back;
+    border-left: variables.$left-border-size solid variables.$color-info;
+    background-color: variables.$color-info-back;
     p {
-        background-color: $color_info_title;
+        background-color: variables.$color-info-title;
     }
 }

@@ -93,7 +93,7 @@
 			<div class="Content">
 				<article>
 	<h2> Notes about my simple portfolio site. </h2>
-	<h4><span> Written by: Stefenmarg on 1/8/2025. Read time: ~2 min</span></h4>
+	<h4><span> Written by: Stefenmarg on 1/8/2025. Read time: ~3 min</span></h4>
 	<div class="page" id="Page">
 		<div class='sign_base sign_info'><p class="sign_title"><i class="fa-sm fa-solid fa-circle-info"></i> Please note: </p> This part is still under developement and will change in the future due to the updates on this site. </div>
 <p>The 5 most recent versions of this site:</p>
@@ -109,11 +109,14 @@
 <p><ul>
 <li> On: Thu, Aug 15, 24, <a href="/posts/Versions/2024-08-15-version-1.0.1/">Version 1.0.1</a> by: Stefanos Margaritis</li>
 </ul></p>
+<h3>Information about this site.</h3>
+<p>In the backend before the site is built into a static site we are using <a href="https://www.11ty.dev/">Eleventy (11ty)</a> that has recently joined <a href="https://fontawesome.com/">Font Awesome</a> the service that I use for the social media icons on the footer of the site. For bundling JavaScript code we are using <a href="https://www.npmjs.com/package/webpack">Webpack</a> that bundles all the code in one neat and compact file. Additionally, this site has a repository that can be found <a href="https://github.com/Stefenmarg/stefenmarg.github.io">here</a> and it has everything that you would need to make a site for yourself.</p>
+<h3>Recent improvements.</h3>
 <p>Overall, this site has gotten some updates that have made better the overall builing process, features are not limited on making a better and more organised eleventy config file by reading things like files to be watched or to be copied from a file instead of manually copy pasting the same piece of code just to do the same things 4 times in a row.</p>
 <p>The files in the <code>config</code> folder found in the root of the project controls all the basic configurations of files that could easily be implemented in a simple loop for convinience. This implementation has thus allowed us to make the building process easier making use of enviroment variables and making use of only the required functions based on the enviroment.</p>
 <p>A must have in this enviroment is the automation of most of the important functions of the site like the post collection based on the folders inside the <code>post</code> folder in the root. This is achieved by using site modules that can be found in the <code>modules</code> folder in the root of the project. It allows the eleventy configuration file to be less cluttered and to have it run functions that correspond to the set eleventy config function. It may not be the best solution but it is a way to run functions without needing to have a file over 200 lines. Optimisation and understanding of the way that modules work is one of the main points of the system used.</p>
 <p>The files in the <code>config</code> directory mostly has to do with functions that need lists thus json was chosen, a simple way to read the file and use it's context in a way that benefits all.</p>
-<p>Other updates on this site on the font matter has to do with ✨ notification signs ✨ which are pretty neat. Below you can see a demo of the signs and how they are used in the backend.</p>
+<p>Other updates on this site on the font matter has to do with ✨ visuals ✨ for example the following signs introduced on <code>v2.0.2</code> which are pretty neat.</p>
 <div class='sign_base sign_info'><p class="sign_title"><i class="fa-sm fa-solid fa-circle-info"></i> Please note: </p> This is an information notice! </div>
 <div class='sign_base sign_warning'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Warning! </p> This is a warning! </div>
 <div class='sign_base sign_alert'><p class="sign_title"><i class="fa-sm fa-solid fa-triangle-exclamation"></i> Alert! </p> This is an alert!! </div>
