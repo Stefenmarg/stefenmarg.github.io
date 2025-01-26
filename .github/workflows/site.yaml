@@ -18,4 +18,4 @@ jobs:
 
       with:
         publish_dir: ./_site
-        github_token: ${{ secrets.gh_key }}
+        github_token: ${{ secrets.GH_KEY }}
