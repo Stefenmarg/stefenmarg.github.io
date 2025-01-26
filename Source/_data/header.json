@@ -1,0 +1,12 @@
+{
+    "Regular": [
+        {"name": "Projects", "url": "/projects"},
+        {"name": "About me", "url": "/about"}
+    ], 
+    
+    "Dropdown_1": [
+        {"name": "TryHackMe", "url": "/thm"},
+        {"name": "HackTheBox", "url": "/htb"},
+        {"name": "CyberDefenders", "url": "/cd"}
+    ]
+}

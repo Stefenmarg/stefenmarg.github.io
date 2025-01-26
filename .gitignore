@@ -1,0 +1,9 @@
+#Node.js files 
+node_modules/
+dev/
+package-lock.json
+
+#Development enviroment files
+.env
+*.cmd
+*.db

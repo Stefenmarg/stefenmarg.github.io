@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	{% include "./head.liquid"%}
+	
+	<body>
+		<div class="pe-5 ps-5 ms-5 me-5 wrapper">
+			<div>
+				{% include "../header.liquid" %}
+			</div>
+
+			<div class="pt-2 pb-2">
+				{{ content }}
+			</div>
+		</div>
+
+		<div class="">
+			{% include "../footer.liquid" %}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+---
+layout: './Vitals/base.liquid'
+---
+
+<div>
+
+    <figure>
+        <blockquote class="blockquote">
+            <p> {{ title }} </p>
+        </blockquote>
+
+        <figcaption class="blockquote-footer">
+            {{ author }} on {{ date | date: "%a, %b %d, %y" }}
+        </figcaption>
+    </figure>
+
+    {{ content }}
+
+    <a class="pt-2 pb-2" onclick="history.back()"><i> <<< Go Back </i></a>
+</div>
