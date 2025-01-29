@@ -5,10 +5,10 @@ const Files = require('./Source/_config/files');
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const domains = require('./Source/_config/Paths/domains.json');
-
 module.exports = function (eleventyConfig) {
-    const enviroment = process.env.enviroment || 'Prod';
+    const EnvVars = process.env
+    const url = (EnvVars.environment == 'Dev')? `${process.env.host}` : "http://stefenmarg.github.io";
+    const baseurl =  (EnvVars.environment == 'Dev')? `${process.env.baseurl}` : "";
 
 	eleventyConfig.setQuietMode(true);
     eleventyConfig.addPlugin(syntaxHighlight);
@@ -21,8 +21,15 @@ module.exports = function (eleventyConfig) {
         return new Date().getFullYear();
     });
 
-    eleventyConfig.addGlobalData("url", `${domains[`${enviroment}`].url}`);
-    eleventyConfig.addGlobalData("baseurl", `${domains[`${enviroment}`].baseurl}`);
+    eleventyConfig.addShortcode("img", function (path) {
+        if (path.startsWith('http')) {
+            return `<img class="img-fluid" src="${path}" />`;
+        }
+        return `<img class="img-fluid" src="http://${url}${baseurl}${path}" />`;
+    });    
+
+    eleventyConfig.addGlobalData("url", url);
+    eleventyConfig.addGlobalData("baseurl", baseurl);
 
     return {
         dir: {
