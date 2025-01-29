@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx npm-run-all serve_dev:*",
-    "prod": "npx npm-run-all build_prod:*",
+    "dev": "set enviroment=Dev & npx npm-run-all serve_dev:*",
+    "prod": "set enviroment=Prod & npx npm-run-all build_prod:*",
 
     "build_prod:eleventy": "npx eleventy",
     "serve_dev:eleventy": "npx eleventy --serve"
