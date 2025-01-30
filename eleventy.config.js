@@ -7,8 +7,8 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
     const EnvVars = process.env
-    const url = (EnvVars.environment == 'Dev')? `${process.env.host}` : "https://stefenmarg.github.io";
-    const baseurl =  (EnvVars.environment == 'Dev')? `${process.env.baseurl}` : "";
+    const url = (EnvVars.environment == 'Dev')? `localhost:8080` : "https://stefenmarg.github.io";
+    const baseurl =  (EnvVars.environment == 'Dev')? `` : "";
 
 	eleventyConfig.setQuietMode(true);
     eleventyConfig.addPlugin(syntaxHighlight);
@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
         if (path.startsWith('http')) {
             return `<img class="img-fluid" src="${path}" />`;
         }
-        return `<img class="img-fluid" src="${url}${baseurl}${path}" />`;
+        return `<img class="img-fluid" src="${baseurl}${path}" />`;
     });    
 
     eleventyConfig.addGlobalData("url", url);

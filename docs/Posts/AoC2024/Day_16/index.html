@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+
+    <!-- SEO optimisations for the site -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stefanos M.",
+            "url": "https://stefenmarg.github.io",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefenmarg",
+                "https://github.com/stefenmarg",
+                "https://x.com/stefenmarg"
+            ],
+            "jobTitle": "Undergraduate Student in Digital Systems",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "University of Thessaly"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-4NCMDDS9PY');
+    </script>
+
+    <title>Advent of Cyber 2024 - Day 16 | Stefenmarg</title>
+
+    <link rel="stylesheet" type="text/css" href="https://stefenmarg.github.io/public/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+
+    <script src="https://stefenmarg.github.io/public/js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+	
+	<body>
+		<div class="pe-5 ps-5 ms-5 me-5 wrapper">
+			<div>
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""> Stefenmarg</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <a class="nav-link" href="/"> Home </a>
+            
+                <li class="nav-item"><a class="nav-link" href="/projects"> Projects </a></li>
+            
+                <li class="nav-item"><a class="nav-link" href="/about"> About me </a></li>
+            
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cyber Security
+            </a>
+            <ul class="dropdown-menu">
+                
+                    <li><a class="dropdown-item" href="/thm"> TryHackMe </a></li>
+                
+                    <li><a class="dropdown-item" href="/htb"> HackTheBox </a></li>
+                
+                    <li><a class="dropdown-item" href="/cd"> CyberDefenders </a></li>
+                
+            </ul>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+			</div>
+
+			<div class="pt-2 pb-2">
+				
+<div>
+
+    <figure>
+        <blockquote class="blockquote">
+            <p> Advent of Cyber 2024 - Day 16 </p>
+        </blockquote>
+
+        <figcaption class="blockquote-footer">
+            Stefenmarg on Mon, Dec 16, 24
+        </figcaption>
+    </figure>
+
+    <div>
+        <img class="img-fluid" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/6228f0d4ca8e57005149c3e3/room-content/6228f0d4ca8e57005149c3e3-1730822609983.png">
+<h3>Topic Covered Day 16: Azure</h3>
+<p>Okay, today was fun, exploring the Azure Platform, seeing users, groups, vaults and Secrets!</p>
+<p>We started off with the introduction part to what Azure is and things like that, then moved down to get out credetials to log into the enviroment for todays challenge.</p>
+<p>The commands provided did cover 100% of the tasks. For task one we would need to search all the users in the secret group, for the second task we would need the id of the above mentioned secret group. For the user in the second group we would need to get their email from the data shown in the bash terminal and the password that infact is not in the password field.</p>
+<p>After logging in to that account, we need to find the name of the vault secret and after that we would need to find what the vault is hidding.</p>
+<p>Pretty fun today, the azure platform was looking good!</p>
+
+    </div>
+
+    <a class="pt-2 pb-2" onclick="history.back()"><i> <<< Go Back </i></a>
+</div>
+			</div>
+		</div>
+
+		<div class="">
+			<footer class="text-center text-lg-start footer pe-5 ps-5 pt-3 pb-3">
+  <div class="text-center">
+    
+      <a href="https://github.com/stefenmarg" class="me-2" style="text-decoration: none;"> 
+        <i class="fa-brands fa-github"></i>
+      </a>
+    
+      <a href="https://www.instagram.com/stefenmarg" class="me-2" style="text-decoration: none;"> 
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    
+      <a href="https://bsky.app/profile/stefenmarg.bsky.social" class="me-2" style="text-decoration: none;"> 
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+    
+      <a href="https://www.linkedin.com/in/stefenmarg" class="me-2" style="text-decoration: none;"> 
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    
+  </div>
+
+  <div class="text-center">
+    © 2025  Copyright Stefanos M.
+  </div>
+</footer>
+		</div>
+	</body>
+</html>
