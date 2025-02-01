@@ -1,5 +1,7 @@
 [
     "./public",
     "./_include",
-    "./_layouts"
+    "./_layouts",
+
+    "../docs/public/js/global.js"
 ]

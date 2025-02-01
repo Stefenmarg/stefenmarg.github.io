@@ -1,3 +1,4 @@
-.custom-nav {
-    background-color: blueviolet;
+/* Change primary color */
+:root {
+  --st-body-ribbon: #B22222;
 }
