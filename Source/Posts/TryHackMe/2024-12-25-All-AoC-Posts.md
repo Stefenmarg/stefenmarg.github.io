@@ -6,7 +6,7 @@ date: "2024-12-25"
 ---
 
 {% for post in collections.AoC2024 %}
-	<ul>
-		<li> {{ post.content }} </li>
-	</ul>
+	<div>
+		{{ post.content }}
+	</div>
 {% endfor %}

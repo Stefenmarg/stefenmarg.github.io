@@ -5,7 +5,7 @@ layout: './Vitals/base.liquid'
 <div class="p-2">
     {{ content }}
 
-    <h3> {{collection}} themed posts: </h3>
+    <h3> Posts with the "{{collection}}" tag: </h3>
     {% if collection %}
         {% for post in collections[collection] limit:5 %}
             <li class="ps-4 pb-2">On: {{ post.date | date: "%a, %b %d, %y" }}, <a href="{{ baseurl }}{{ post.url }}">{{ post.data.title }}</a> by: {{ post.data.author }}</li>

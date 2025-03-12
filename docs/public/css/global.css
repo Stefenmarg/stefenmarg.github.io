@@ -1,4 +1,14 @@
 /* Change primary color */
 :root {
   --st-body-ribbon: #B22222;
+  --st-disqus-fix: #FFFFFF;
+}
+
+.disqus_field {
+    margin: 1rem 2rem 1rem 2rem;
+    background-color: var(--st-disqus-fix);;
+    border-radius: 24px;
+    border-color: var(--st-disqus-fix);
+    border-width: 2rem;
+    border-style: solid;
 }

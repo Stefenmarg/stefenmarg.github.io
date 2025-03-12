@@ -6,7 +6,7 @@ layout: './Vitals/base.liquid'
     {{ content }}
 
 
-    <h3 class="pb-2"> {{title}} themed posts: </h3>
+    <h3 class="pb-2"> Posts with the "{{title}}" tag: </h3>
     {% if pagination.data %}
         {% for post in posts %}
             <li class="pb-2">On: {{ post.date | date: "%a, %b %d, %y" }}, <a href="{{ baseurl }}{{ post.url }}">{{ post.data.title }}</a> by: {{ post.data.author }}</li>
