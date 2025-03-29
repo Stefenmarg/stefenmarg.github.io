@@ -1,0 +1,65 @@
+<head>    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{site.description}}">
+    <meta name="keywords" content="{{site.metadata}}">
+    <meta name="author" content="{{site.author.name}}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ baseurl }}/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ baseurl }}/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ baseurl }}/assets/favicon_io/favicon-16x16.png">
+
+    <!-- SEO optimisations for the site -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "{{ data.author.name }}",
+            "url": "{{ url }}{{ baseurl }}",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefenmarg",
+                "https://github.com/stefenmarg",
+                "https://x.com/stefenmarg"
+            ],
+            "jobTitle": "Undergraduate Student in Digital Systems",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "University of Thessaly"
+            }
+        }
+    </script>
+
+    <script>
+        // Load theme as soon as the DOM is ready
+        document.addEventListener("DOMContentLoaded", () => {
+            Theme.syncSelectedTab();
+            Theme.syncTheme();
+        });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCMDDS9PY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-4NCMDDS9PY');
+    </script>
+
+    <title>{{ title }} | {{ data.title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ baseurl }}/public/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+
+    <script src="{{ baseurl }}/public/js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script id="dsq-count-scr" src="//stefenmarg.disqus.com/count.js" async></script>
+</head>

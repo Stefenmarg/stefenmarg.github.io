@@ -1,0 +1,6 @@
+<nav class="text-center">
+    <hr class="hr hr-blurry"></hr>
+    {% for item in navigation %}
+        <a href="{{ item.url }}" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator {{item.url}}"> {{ item.name }} </h3> </a>
+    {% endfor %}
+</nav>

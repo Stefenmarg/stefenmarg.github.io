@@ -1,0 +1,30 @@
+---
+layout: './Vitals/base.liquid'
+---
+
+<div class="p-2">
+    {{ content }}
+
+
+    <h3 class="pb-2"> Posts with the "{{title}}" tag: </h3>
+    
+    {% if pagination.data %}
+        <ul>
+        {% for post in posts %}
+            <li class="ps-2 pb-2">On: {{ post.date | date: "%a, %b %d, %y" }}, <a href="{{ baseurl }}{{ post.url }}">{{ post.data.title }}</a> by: {{ post.data.author }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No collection specified in frontmatter.</p>
+    {% endif %}
+
+    <div>
+        {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}"> << Newer posts</a>
+        {% endif %}
+        {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}">Older posts >> </a>
+        {% endif %}
+    </div>
+
+</div>

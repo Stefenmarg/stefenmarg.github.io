@@ -1,0 +1,9 @@
+<footer class="text-center text-lg-start footer mt-auto">
+  <hr class="hr hr-blurry"> </hr>  
+
+  <div class="text-center">
+    {% for item in footer %}
+      <a href="{{ item.url }}" class="me-2" style="text-decoration: none;">  <i class="{{ item.icon }}"></i> </a>
+    {% endfor %}
+  </div>
+</footer>

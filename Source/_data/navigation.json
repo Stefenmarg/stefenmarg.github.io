@@ -1,0 +1,10 @@
+[
+    {"name": "Home", "url": "/"},
+    {"name": "About me", "url": "/about"},
+    
+    {"name": "Projects", "url": "/projects"},
+
+    {"name": "TryHackMe", "url": "/thm"},
+    {"name": "HackTheBox", "url": "/htb"},
+    {"name": "CyberDefenders", "url": "/cd"}
+]
