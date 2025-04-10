@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html data-bs-theme="Theme">
 	<head>    
     <meta charset="UTF-8">
 
@@ -37,7 +37,6 @@
         // Load theme as soon as the DOM is ready
         document.addEventListener("DOMContentLoaded", () => {
             Theme.syncSelectedTab();
-            Theme.syncTheme();
         });
     </script>
 
@@ -69,23 +68,23 @@
 	<body>
 		<div class="modal-body row">
 
-			<div class=" mw-25 col-md-3 bg-body-tertiary d-flex flex-column min-vh-100 p-4 text-break">
+			<div class="col-md-2 ms-4 bg-body-tertiary d-flex flex-column min-vh-100 p-4 text-break">
 				<img class="img-fluid rounded-circle center-block d-block" src="https://avatars.githubusercontent.com/u/145908944"></img>
 
 				<nav class="text-center">
     <hr class="hr hr-blurry"></hr>
     
-        <a href="/" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /"> Home </h3> </a>
+        <a href="/" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /"> Home </h4> </a>
     
-        <a href="/about" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /about"> About me </h3> </a>
+        <a href="/about" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /about"> About me </h4> </a>
     
-        <a href="/projects" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /projects"> Projects </h3> </a>
+        <a href="/projects" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /projects"> Projects </h4> </a>
     
-        <a href="/thm" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /thm"> TryHackMe </h3> </a>
+        <a href="/thm" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /thm"> TryHackMe </h4> </a>
     
-        <a href="/htb" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /htb"> HackTheBox </h3> </a>
+        <a href="/htb" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /htb"> HackTheBox </h4> </a>
     
-        <a href="/cd" class="m-2" style="text-decoration: none;">  <h3 class="page_indicator /cd"> CyberDefenders </h3> </a>
+        <a href="/cd" class="m-2" style="text-decoration: none;">  <h4 class="page_indicator /cd"> CyberDefenders </h4> </a>
     
 </nav>
 
@@ -94,30 +93,28 @@
 
   <div class="text-center">
     
-      <a href="https://github.com/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-github"></i> </a>
+      <a href="https://github.com/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-github font-awesome-icon"></i> </a>
     
-      <a href="https://www.instagram.com/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-instagram"></i> </a>
+      <a href="https://www.instagram.com/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-instagram font-awesome-icon"></i> </a>
     
-      <a href="https://bsky.app/profile/stefenmarg.bsky.social" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-bluesky"></i> </a>
+      <a href="https://bsky.app/profile/stefenmarg.bsky.social" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-bluesky font-awesome-icon"></i> </a>
     
-      <a href="https://www.linkedin.com/in/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-linkedin"></i> </a>
+      <a href="https://www.linkedin.com/in/stefenmarg" class="me-2" style="text-decoration: none;">  <i class="fa-brands fa-linkedin font-awesome-icon"></i> </a>
     
+    <a href="/archives" class="me-2" style="text-decoration: none;">  <i class="fa-solid fa-box-archive font-awesome-icon"></i> </a>
+
   </div>
 </footer>
 			</div>
 		
 
-			<div class="wrapper col-md-6 m-3 ps-3 pe-3">
+			<div class="wrapper col-md-9 m-3">
 				<div class="center">
 					<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="">
 			<h1>Stefenmarg</h1>
 		</a>
-    
-    <button class="btn btn-primary me-2" onclick="Theme.toggleTheme()">
-      <i class="fa-regular fa-sun nav-link"></i>
-    </button>
   </div>
 </nav>
 				</div>
@@ -125,8 +122,8 @@
 				
 <div class="p-2">
     <h2>TryHackMe</h2>
-<p>All the posts here will cover topics like exercises and labs that can be found in the <a href="https://www.tryhackme.com/">TryHackMe platform</a>.</p>
-<p>As per their website, &quot;TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!&quot;.</p>
+<p>All the posts in this section of the site will cover Room, Labs and more that can be found in the <a href="https://www.tryhackme.com/">TryHackMe platform</a>.</p>
+<p>TryHackMe is a free online platform for learning cyber security, using hands-on exercises and labs, all through your browser!</p>
 
 
 

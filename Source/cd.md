@@ -1,6 +1,7 @@
 ---
 title: 'Cyber Defenders'
 layout: 'Listings/posts_pagination.liquid'
+eleventyExcludeFromCollections: true
 pagination:
   data: collections.CyberDefenders
   size: 7

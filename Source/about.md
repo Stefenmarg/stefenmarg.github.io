@@ -1,6 +1,7 @@
 ---
 title: 'About me'
 layout: 'Vitals/base.liquid'
+eleventyExcludeFromCollections: true
 ---
 
 ## {{title}}

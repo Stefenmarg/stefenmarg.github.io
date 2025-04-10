@@ -3,6 +3,7 @@ title: 'Home'
 layout: 'Listings/posts'
 permalink: '/'
 collection: 'Blog'
+eleventyExcludeFromCollections: true
 ---
 
 #### Here’s a little about me!
@@ -10,7 +11,7 @@ Hi, I’m Stefanos, a second-year student at the Digital Systems Department of t
 
 All of my projects are created in my spare time alongside my other commitments. If you find value in my work and would like to support me, a small tip on Ko-fi would be greatly appreciated—though never expected! Thank you for being part of this journey.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X417UEDG)
+{% include "./kofi-button.liquid" %}
 
 ---
 

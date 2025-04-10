@@ -1,6 +1,7 @@
 ---
 title: 'Hack The Box'
 layout: 'Listings/posts_pagination.liquid'
+eleventyExcludeFromCollections: true
 pagination:
   data: collections.HackTheBox
   size: 7

@@ -3,7 +3,9 @@
 
   <div class="text-center">
     {% for item in footer %}
-      <a href="{{ item.url }}" class="me-2" style="text-decoration: none;">  <i class="{{ item.icon }}"></i> </a>
+      <a href="{{ item.url }}" class="me-2" style="text-decoration: none;">  <i class="{{ item.icon }} font-awesome-icon"></i> </a>
     {% endfor %}
+    <a href="{{page.baseurl}}/archives" class="me-2" style="text-decoration: none;">  <i class="fa-solid fa-box-archive font-awesome-icon"></i> </a>
+
   </div>
 </footer>

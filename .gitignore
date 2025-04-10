@@ -1,0 +1,7 @@
+node_modules
+
+# VSCode
+.vscode
+
+#Backup files.
+*.bak
