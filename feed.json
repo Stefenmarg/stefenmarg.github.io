@@ -9,5 +9,21 @@
         "name": "Stefanos M."
     },
     "items": [
+        {
+            "id": "https://stefenmarg.github.io/sample-post/",
+            "url": "https://stefenmarg.github.io/sample-post/",
+            "title": "Sample post",
+            "summary": "This is a sample post with tags to check if the tag system is working correctly on the site.",
+            "content_html": "<p>This is a sample post with tags to check if the tag system is working correctly on the site.</p>",
+            "author": {
+                "name": "Stefanos M."
+            },
+            "tags": [
+                   "Projects",
+                   "Cyber-security"
+            ],
+            "date_published": "2025-05-22T22:26:51+03:00",
+            "date_modified": "2025-05-22T22:26:51+03:00"
+        }
     ]
 }
