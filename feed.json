@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Stefenmarg",
+    "description": "",
+    "home_page_url": "https://stefenmarg.github.io",
+    "feed_url": "https://stefenmarg.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Stefanos M."
+    },
+    "items": [
+    ]
+}

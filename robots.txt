@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://stefenmarg.github.io/sitemap.xml
