@@ -3,12 +3,37 @@
     <title>Stefenmarg</title>
     <link href="https://stefenmarg.github.io/feed.xml" rel="self" />
     <link href="https://stefenmarg.github.io" />
-    <updated>2025-05-22T22:37:14+03:00</updated>
+    <updated>2025-05-25T21:47:16+03:00</updated>
     <author>
         <name>Stefanos M.</name>
     </author>
     <id>https://stefenmarg.github.io</id>
 
+    <entry>
+        <title>Transition to Publii</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/transition-to-publii/"/>
+        <id>https://stefenmarg.github.io/transition-to-publii/</id>
+            <category term="Projects"/>
+
+        <updated>2025-05-22T23:34:39+03:00</updated>
+            <summary>
+                <![CDATA[
+                    Publii is a fresh new app on the block that opens up fresh avenues for creating interesting and attractive static website This is the official 4th rendition of my portfolio site in 2025. This time, it will be here for good; with Publii I don't&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <blockquote>
+<p>Publii is a fresh new app on the block that opens up fresh avenues for creating interesting and attractive static website</p>
+</blockquote>
+<p>This is the official 4th rendition of my portfolio site in 2025. This time, it will be here for good; with <a href="https://getpublii.com/" target="_blank" rel="nofollow noopener noreferrer">Publii</a> I don't need to program the site myself, I get a nice menu that looks like WordPress and all I have to do from there is manage the back-end with tags, pages, posts and settings regarding the theme and other configurations.</p>
+<p>It will take some time to fully transition all the posts and pages from the old site since I also have upcoming exams, plus it is a fairly new platform that I have get used to. </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sample post</title>
         <author>
@@ -28,6 +53,270 @@
         <content type="html">
             <![CDATA[
                 <p>This is a sample post with tags to check if the tag system is working correctly on the site.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>IcedID Lab</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/icedid-lab/"/>
+        <id>https://stefenmarg.github.io/icedid-lab/</id>
+            <category term="Old-Posts"/>
+            <category term="CyberDefenders"/>
+            <category term="Cyber-security"/>
+
+        <updated>2025-01-30T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Lab caterogy: Thread Intel Lab can be found [here].(https://cyberdefenders.org/blueteam-ctf-challenges/icedid/) For this lab we were given the following scenario: A cyber threat group was identified for initiating widespread phishing campaigns to distribute further malicious payloads. The most frequently encountered payloads were IcedID. You have been given&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h4 id="lab-caterogy-thread-intel">Lab caterogy: Thread Intel</h4>
+<p>Lab can be found [here].(<a href="https://cyberdefenders.org/blueteam-ctf-challenges/icedid/">https://cyberdefenders.org/blueteam-ctf-challenges/icedid/</a>)</p><p>For this lab we were given the following scenario:</p><blockquote>
+<p>A cyber threat group was identified for initiating widespread phishing campaigns to distribute further malicious payloads. The most frequently encountered payloads were IcedID. You have been given a hash of an IcedID sample to analyze and monitor the activities of this advanced persistent threat (APT) group.</p></blockquote>
+<p>So the task that we were given would be: to investigate a hash and from that to get requests, registrars, document names an function names. The tools that I used were:  </p><p><a href="https://virustotal.com/gui/home/upload">VirusTotal</a>, 
+<a href="https://who.is/">Who.is</a> 
+<a href="https://malpedia.caad.fkie.fraunhofer.de/">Malpedia</a>
+<a href="https://tria.ge/">Triage</a>.</p><h5 id="q1-what-is-the-name-of-the-file-associated-with-the-given-hash">Q1: What is the name of the file associated with the given hash?</h5>
+<p>First and easy step is to go to VirusTotal and submit the hash to the search tab, then in the details tab you canscroll down to the <code>Names</code> section and get the last name in the list as the answer.</p><h5 id="q2-can-you-identify-the-filename-of-the-gif-file-that-was-deployed">Q2: Can you identify the filename of the GIF file that was deployed?</h5>
+<p>For this question you need to go to the <code>Behaviour</code> tab ans in there scroll down to the <code>HTTP Requests</code> and there you will be able to see one of many gets for the same gif file.</p><h5 id="q3-how-many-domains-does-the-malware-look-to-download-the-additional-payload-file-in-q2">Q3: How many domains does the malware look to download the additional payload file in Q2?</h5>
+<p>In the same section as the above question all you have to do is <code>after pressing the arrow to extend the links shown</code> count the unique domains that serve the .gif file.</p><h5 id="q4-from-the-domains-mentioned-in-q3-a-dns-registrar-was-predominantly-used-by-the-threat-actor-to-host-their-harmful-content-enabling-the-malwares-functionality-can-you-specify-the-registrar-inc">Q4: From the domains mentioned in Q3, a DNS registrar was predominantly used by the threat actor to host their harmful content, enabling the malware’s functionality. Can you specify the Registrar INC?</h5>
+<p>Who.is is our friend here, in the same section you can take the domains that you do not recognise and submit a search with it on the site.</p><pre><code class="language-bash">| Index | Domain                 |  Registrar&#39;s Name             |
+|-------|----------------------- |-------------------------------|
+| 1     | usaaforced.fun         | Not found                     |
+| 2     | agenbolatermurah.com   | Namecheap                     |
+| 3     | columbia.aula-web.net  | Not found                     |
+| 4     | metaflip.io            | CommuniGal Communication Ltd  |
+| 5     | partsapp.com.br        | Not found                     |
+| 6     | tajushariya.com        | Not found                     |
+| 7     | x1.i.lencr.org         | Cloudflare                    |
+</code></pre>
+<p>Based on how many times site number 2 is found in the <code>HTTP Requests</code> section in the page, we can submit <code>Namecheap</code> as the answer.</p><h5 id="q5-could-you-specify-the-threat-actor-linked-to-the-sample-provided">Q5: Could you specify the threat actor linked to the sample provided?</h5>
+<p>For this we will need to go to Malpedia and search the name of the lab <code>IcedID</code> and select the first result (not the downloader), after that the threat actor(s) can be found in the page below the title.</p><h5 id="q6-in-the-execution-phase-what-function-does-the-malware-employ-to-fetch-extra-payloads-onto-the-system">Q6: In the Execution phase, what function does the malware employ to fetch extra payloads onto the system?</h5>
+<p>For this we will need to go to tria.ge and search the hash that we were given. In the Malware config section in the source block we can find the function that is the answer.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>RedLine Stealer Lab.</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/redline-stealer-lab/"/>
+        <id>https://stefenmarg.github.io/redline-stealer-lab/</id>
+            <category term="Old-Posts"/>
+            <category term="CyberDefenders"/>
+            <category term="Cyber-security"/>
+
+        <updated>2025-01-28T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Lab caterogy: Thread Intel Lab can be found [here].(https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/) For this lab we were given the following scenario: You are part of the Threat Intelligence team in the SOC (Security Operations Center). An executable file has been discovered on a colleague’s computer, and it’s suspected&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h4 id="lab-caterogy-thread-intel">Lab caterogy: Thread Intel</h4>
+<p>Lab can be found [here].(<a href="https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/">https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/</a>)</p><p>For this lab we were given the following scenario:</p><blockquote>
+<p>You are part of the Threat Intelligence team in the SOC (Security Operations Center). An executable file has been discovered on a colleague’s computer, and it’s suspected to be linked to a Command and Control (C2) server, indicating a potential malware infection.</p></blockquote>
+<p>Our task is to investigate the executable file by using it’s hash that was given to us in a text file within the downloadable lab file archive.</p><p>With this has we can simply go to <a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a> and in the search tab paste they hash given.</p><h5 id="q1-categorizing-malware-enables-a-quicker-and-easier-understanding-of-its-distinct-behaviors-and-attack-vectors-what-is-the-category-of-the-identified-malware">Q1: Categorizing malware enables a quicker and easier understanding of its distinct behaviors and attack vectors. What is the category of the identified malware?</h5>
+<p>This question is simple since all we have to do for this question is take the hash provided by the course that is extracted from the archive and submit it in the search tab as seen above in the VirusTotal platform. After that we will be seeing below 
+a small box that will have the threat cateort in it.</p><h5 id="q2-clearly-identifying-the-name-of-the-malware-file-improves-communication-among-the-soc-team-what-is-the-file-name-associated-with-this-malware">Q2: Clearly identifying the name of the malware file improves communication among the SOC team. What is the file name associated with this malware?</h5>
+<p>This is also a simple step since below the hash on the VirusTotal platform we can see the name of the executable.</p><h5 id="q3-knowing-the-exact-timestamp-of-when-the-malware-was-first-observed-can-help-prioritize-response-actions-newly-detected-malware-may-require-urgent-containment-and-eradication-compared-to-older-well-documented-threats-what-is-the-utc-timestamp-of-the-malwares-first-submission-to-virustotal">Q3: Knowing the exact timestamp of when the malware was first observed can help prioritize response actions. Newly detected malware may require urgent containment and eradication compared to older, well-documented threats. What is the UTC timestamp of the malware’s first submission to VirusTotal?</h5>
+<p>For this question all we have to do is go to the <code>Details</code> tab above the box mentioned in Q2. After scrolling a little bit we can see in the history part the time of the first submission.</p><h5 id="q4-understanding-the-techniques-used-by-malware-helps-in-strategic-security-planning-what-is-the-mitre-attck-technique-id-for-the-malwares-data-collection-from-the-system-before-exfiltration">Q4: Understanding the techniques used by malware helps in strategic security planning. What is the MITRE ATT&amp;CK technique ID for the malware’s data collection from the system before exfiltration?</h5>
+<p>For this question all we have to do is go to the <code>Behaviour</code> tab of the threat and scroll until we reach the <code>Collection</code> technique that can be found under the <code>MITRE ATT&amp;CK Tacticsand Techniques tab</code> and thefirst entry is our answer.</p><h5 id="q5-following-execution-what-domain-name-resolution-is-performed-by-the-malware">Q5: Following execution, what domain name resolution is performed by the malware?</h5>
+<p>The answer to this question can also be found in this page in the <code>IP Traffic tab</code> and the second IP’s url is our answer.</p><h5 id="q6-once-the-malicious-ip-addresses-are-identified-network-security-devices-such-as-firewalls-can-be-configured-to-block-traffic-to-and-from-these-addresses-can-you-provide-the-ip-address-and-destination-port-the-malware-communicates-with">Q6: Once the malicious IP addresses are identified, network security devices such as firewalls can be configured to block traffic to and from these addresses. Can you provide the IP address and destination port the malware communicates with?</h5>
+<p>This answer too is in the same section just above the last question’s answer and the only ip that does not seem to have a domain associated with it.</p><h5 id="q7-yara-rules-are-designed-to-identify-specific-malware-patterns-and-behaviors-whats-the-name-of-the-yara-rule-created-by-varp0s-that-detects-the-identified-malware">Q7: YARA rules are designed to identify specific malware patterns and behaviors. What’s the name of the YARA rule created by “Varp0s” that detects the identified malware?</h5>
+<p>With a vasic google search of <code>Redline stealer yara rule by Varp0s</code> we can simply naviate to the first result in <a href="https://yaraify.abuse.ch/sample/1d2c6f725cb3a197cc249ea9e848d8f6d2b8b7b3af64980479f7b2225deae931/">YARAify</a> and get our anwser without the <code>_V2</code> part of the rule name.</p><h5 id="q8-understanding-which-malware-families-are-targeting-the-organization-helps-in-strategic-security-planning-for-the-future-and-prioritizing-resources-based-on-the-threat-can-you-provide-the-different-malware-alias-associated-with-the-malicious-ip-address">Q8: Understanding which malware families are targeting the organization helps in strategic security planning for the future and prioritizing resources based on the threat. Can you provide the different malware alias associated with the malicious IP address?</h5>
+<p>Go to <a href="https://threatfox.abuse.ch/">THREATfox</a> and search just the ip that we found in Q6. With the only result returned, open the result’s page and there you can see the malware alias of RedLine Stealer.</p><h5 id="q9-by-identifying-the-malwares-imported-dlls-we-can-configure-security-tools-to-monitor-for-the-loading-or-unusual-usage-of-these-specific-dlls-can-you-provide-the-dll-utilized-by-the-malware-for-privilege-escalation">Q9: By identifying the malware’s imported DLLs, we can configure security tools to monitor for the loading or unusual usage of these specific DLLs. Can you provide the DLL utilized by the malware for privilege escalation?</h5>
+<p>For the final step all we need to do is go back to the VirusTotal page and search for <code>.dll</code> in the <code>Modules loaded</code> section the last result given is the answer.
+{% img “/public/img/Cyber/Redline/screen_7.png” %}</p><p>That is all for this lab, very lovely, we used some new tools with this. Overall amazing experience solving the lab.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>FakeGPT Lab</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/fakegpt-lab/"/>
+        <id>https://stefenmarg.github.io/fakegpt-lab/</id>
+            <category term="Old-Posts"/>
+            <category term="CyberDefenders"/>
+            <category term="Cyber-security"/>
+
+        <updated>2025-01-24T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Lab caterogy: Malware Analysis Lab can be found here. For this lab we were given the following scenario: Your cybersecurity team has been alerted to suspicious activity on your organization’s network. Several employees reported unusual behavior in their browsers after installing what they believed to&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h4 id="lab-caterogy-malware-analysis">Lab caterogy: Malware Analysis</h4>
+<p>Lab can be found <a href="https://cyberdefenders.org/blueteam-ctf-challenges/fakegpt/">here.</a></p><p>For this lab we were given the following scenario:</p><blockquote>
+<p>Your cybersecurity team has been alerted to suspicious activity on your organization’s network. Several employees reported unusual behavior in their browsers after installing what they believed to be a helpful browser extension named “ChatGPT”. However, strange things started happening: accounts were being compromised, and sensitive information appeared to be leaking.</p></blockquote>
+<blockquote>
+<p>Your task is to perform a thorough analysis of this extension identify its malicious components.</p></blockquote>
+<p>After downloading the archive file for the extension and unzipping it with the password provided we get greeted with the enviroment that we are going to investigate. To see the extension’s files I opened the folder with VSCode.</p><h5 id="q1-which-encoding-method-does-the-browser-extension-use-to-obscure-target-urls-making-them-more-difficult-to-detect-during-analysis">Q1: Which encoding method does the browser extension use to obscure target URLs, making them more difficult to detect during analysis?</h5>
+<p>In this part it appears that the function is not actually used in the code, whether this is intentional 
+or not I do not know but we can still solve this questions.</p><p>For this question we can rule out the following files:</p><ul>
+<li><code>manifest.json</code></li>
+<li><code>ui.html</code></li>
+<li><code>img.GIF</code></li>
+</ul>
+<p>Since we are looking into obscuring something we can also rule out the <code>crypto.js</code> file since all it does is AES Encrypt a string with a key. With the 2 remaining files <code>loader.js</code> and <code>app.js</code> all we have to do is search for a function that decodes something. After simply looking through the 2 files we can see the existance of a base64 string thus maarking Q1 complete with the answer bring <code>base64</code>.</p><pre><code class="language-JavaScript">const targets = [_0xabc1(&#39;d3d3LmZhY2Vib29rLmNvbQ==&#39;)];
+</code></pre>
+<h5 id="q2-which-website-does-the-extension-monitor-for-data-theft-targeting-user-accounts-to-steal-sensitive-information">Q2: Which website does the extension monitor for data theft, targeting user accounts to steal sensitive information?</h5>
+<p>If we were to search for regular urls in these files we would find just an image source link which is not a site that someone wuld really want to monitor so it must be hidden. What if we were to take the string found above in the <code>targets</code> constant and decode it from <code>base64</code> what would it return?</p><pre><code class="language-Bash">echo &quot;d3d3LmZhY2Vib29rLmNvbQ==&quot; | base64 -d
+www.facebook.com
+</code></pre>
+<p>Thus like that we were able to get what the target website actually was for Q2. Genuine question, is <code>www.facebook.com</code> really used in 2025?</p><h5 id="q3-which-type-of-html-element-is-utilized-by-the-extension-to-send-stolen-data">Q3: Which type of HTML element is utilized by the extension to send stolen data?</h5>
+<p>This is pretty easy since the function that gets the element to load is in the same file with the above questions. Just following the call stuck after the variable of the above questions we go to the function that uses the html element: <code>if</code> &gt; <code>exfiltrateCredentials(username, password)</code> &gt; <code>sendToServer</code> thus seeing that the utilised element is and <code>img</code> element.</p><h5 id="q4-what-is-the-first-specific-condition-in-the-code-that-triggers-the-extension-to-deactivate-itself">Q4: What is the first specific condition in the code that triggers the extension to deactivate itself?</h5>
+<p>If we stroll again through the files again we can propably see an alert in the <code>loader.js</code> file that disables the extension thus making the answer to the forth question that is <code>navigator.plugins.length === 0</code>. </p><h5 id="q5-which-event-does-the-extension-capture-to-track-user-input-submitted-through-forms">Q5: Which event does the extension capture to track user input submitted through forms?</h5>
+<p>This answer can be simply found with the search option and we get 2 results in the <code>.addEventListener()</code> attribute. Since the question below is about keystrokes and the events found are either <code>submit</code> or <code>keydown</code> this is propably the <code>submit</code> event.  </p><h5 id="q6-which-api-or-method-does-the-extension-use-to-capture-and-monitor-user-keystrokes">Q6: Which API or method does the extension use to capture and monitor user keystrokes?</h5>
+<p>As mentioned above the only remaining event is the <code>keydown</code> thus marking question 6 solved.</p><h5 id="q7-what-is-the-domain-where-the-extension-transmits-the-exfiltrated-data">Q7: What is the domain where the extension transmits the exfiltrated data?</h5>
+<p>Do you remember in Q2 the other url <code>https://Mo.Elshaheedy.com/</code> found that is supposed to load an image? Well that was the domain that is the answer to this question.</p><h5 id="q8-which-function-in-the-code-is-used-to-exfiltrate-user-credentials-including-the-username-and-password">Q8: Which function in the code is used to exfiltrate user credentials, including the username and password?</h5>
+<p>Keyword from the question <code>exfiltrate</code> if we simply search this we get 2 functions of which one is the answer to the above question. Since we are talking about creadentials though we are talking about the
+<code>exfiltrateCredentials(username, password)</code> function.</p><h5 id="q9-which-encryption-algorithm-is-applied-to-secure-the-data-before-sending">Q9: Which encryption algorithm is applied to secure the data before sending?</h5>
+<p>Do you remember in Q1 that we ruled out <code>Crypto.js</code>, well it is time for us to see what it contains and find the algorithm that it uses. On the <code>6th line</code> we can see that we are dealing with the <code>AES</code> algorithm thus marking this question complete too.</p><h5 id="q10-what-does-the-extension-access-to-store-or-manipulate-session-related-data-and-authentication-information">Q10: What does the extension access to store or manipulate session-related data and authentication information?</h5>
+<p>Final question that cannot be found on the js files, simply browsing all the files from scratch and watching extension permissions we can finally see that we are dealing with <code>cookies</code>!</p><h5 id="closing-statement">Closing statement</h5>
+<p>I have to say that this lab was supper fun, it was my first time diving into the code of an extension. Seeing what an extension is really capable to do is scary to be honest. As rated in the ite after the completion for me it is 100% a 5/5 stars lab.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>More posts coming soon.</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/more-posts-coming-soon/"/>
+        <id>https://stefenmarg.github.io/more-posts-coming-soon/</id>
+            <category term="Old-Posts"/>
+            <category term="HackTheBox"/>
+            <category term="Cyber-security"/>
+
+        <updated>2025-01-24T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    More HackTheBox content will come soon, The template offers Great UI and many diffrent things to start with but i still need some thime to deside what to study over there.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="more-hackthebox-content-will-come-soon">More HackTheBox content will come soon,</h2>
+<p>The template offers Great UI and many diffrent things to start with but i still need some thime to deside what to study over there. </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Advent of Cyber 2024 - Final Satements and feedback.</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/advent-of-cyber-2024-final-satements-and-feedback/"/>
+        <id>https://stefenmarg.github.io/advent-of-cyber-2024-final-satements-and-feedback/</id>
+            <category term="TryHackMe"/>
+            <category term="Old-Posts"/>
+            <category term="Cyber-security"/>
+
+        <updated>2024-12-27T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Advent of Cyber 2024 (⭐⭐⭐⭐⭐) 5/5 Stars. From the first day I loved the event and now I am pretty sad (in a way) to have finished the event. Every day was a new unique adventure letting you learn new stuff while at the same&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Advent of Cyber 2024 (⭐⭐⭐⭐⭐) 5/5 Stars.</p><p>From the first day I loved the event and now I am pretty sad (in a way) to have finished the event.</p><p>Every day was a new unique adventure letting you learn new stuff while at the same time making you use previously taught subjects. Ex. the burpsuit and the wireshark tasks. </p><p>Now that it has finished i have sat and watched the walkthroughs and EVERY SINGLE ONE OF THEM were amazing and were able to make the people watching understand the sunject that they would be learning that day. </p><p>Although, I would want to have tinkered with some databases, it would have been pretty cool.</p><p>Also, I got my certificate and it can be found in the about page!!</p><p><del>Now its time to wait for the prices! (Im joking of course! I Would have done this without the prices.)</del>
+Update: Didn’t win anything and it is perfectly fine!</p><p>Thanks a lot for reading!</p><ul>
+<li>Stefanos M.</li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Advent of Cyber 2024</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/advent-of-cyber-2024/"/>
+        <id>https://stefenmarg.github.io/advent-of-cyber-2024/</id>
+            <category term="TryHackMe"/>
+            <category term="Old-Posts"/>
+            <category term="Cyber-security"/>
+
+        <updated>2024-12-01T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Advent of Cyber is a christmas event organised by the TryHackMe team that releases every day at 6PM GMT(UTC+0) a new and exciting challenge until December 31st! Since I had an account there I thought it would be a great change to dive into the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><a href="https://tryhackme.com/r/room/adventofcyber2024">Advent of Cyber</a> is a christmas event organised by the TryHackMe team that releases every day at <code>6PM GMT(UTC+0)</code> a new and exciting challenge until <code>December 31st</code>!  </p><p>Since I had an account there I thought it would be a great change to dive into the Cybersecurity part of the internet for a taste since so far I have only done programming and electronics. Plus uppon 100% completion I’ll be getting a badge AND a certificate!</p><p>So far I am loving this set of challenges! 
+(Solutions to the challenges <i>may</i> be released after January 1st; if they are released they will be inside the respective post.)</p><p>Solution to the challenges have been taken down due to the site’s redesign.</p><p>By the way! all the images that are above the topics covered section in the AoC 2024 posts can be found in the <a href="https://tryhackme.com/r/room/adventofcyber2024">Advent of Cyber room.</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>WordCamp Larisa 2024</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/wordcamp-larisa-2024/"/>
+        <id>https://stefenmarg.github.io/wordcamp-larisa-2024/</id>
+            <category term="Posts"/>
+            <category term="Old-Posts"/>
+
+        <updated>2024-11-09T12:00:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    WordCamp Larisa 2024 happend, pretty amazing event not gonna lie! There were very interesting topics covered, personal/company branding, marketing, forking the GPL way and even making user’s search experience better. All the presentations were amazing and the topics that were covered were so interesting that&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>WordCamp Larisa 2024 happend, pretty amazing event not gonna lie!</p><p>There were very interesting topics covered, personal/company branding, marketing, forking the GPL way and even making user’s search experience better. All the presentations were amazing and the topics that were covered were so interesting that i lost track of time; talks that were supposed to be 30-45 minutes long felt to be 15 minutes long.</p><p>On arrivng at Joist we were given our badges and a bundle of gifts (An event themed bag, T-Shirts, pens, a squeeze ball, mousepads, coupons and most importantly stickers) for which im very greatfull. After getting the gifts, we got right infront of the sponsors’ den in which companies had stands and some of them even had giveaways. All the companies were offering a great amount of services around hosting, domains (very tempted to buy then and there a domain for the site not gonna lie), marketing, eCommerce, website design and more.</p><p>I mostly attended the presentations on Track 1 and not that many workshops since the topics covered were a bit more interesting than the workshops. Overall, the event was amazing and i feel very lucky to have been there, meeting new people and unlocking new opportunities.</p><p>Next event I am attending is: Game Developer’s Meetup, 2024-11-16.</p><p>Contextual update: Sadly, I was not able to attend ‘Game Developer’s Meetup’ due to getting sick.</p><p>Thanks a lot for reading!
+ * Stefanos M.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Shorten-a-railway</title>
+        <author>
+            <name>Stefanos M.</name>
+        </author>
+        <link href="https://stefenmarg.github.io/shorten-a-railway/"/>
+        <id>https://stefenmarg.github.io/shorten-a-railway/</id>
+            <category term="Software"/>
+            <category term="Projects"/>
+            <category term="Old-Posts"/>
+
+        <updated>2024-09-09T12:00:00+03:00</updated>
+            <summary>
+                <![CDATA[
+                    What is ‘Shorten-a-railway’ Shorten-a-railway is a url sorten-er service that runs it’s backend server with NodeJS. It makes use of ExpressJS, SQLite3 and the FS module to function. It was build in a bit over a week since there were some minor accidents in the&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h3 id="what-is-shorten-a-railway">What is <a href="https://github.com/Stefenmarg/Shorten-A-Railway">‘Shorten-a-railway’</a></h3>
+<p>Shorten-a-railway is a url sorten-er service that runs it’s backend server with NodeJS.
+It makes use of ExpressJS, SQLite3 and the FS module to function.</p><p>It was build in a bit over a week since there were some minor accidents in the development process like: </p><ul>
+<li>Deleting the codebase twice in the early development stages</li>
+<li>Needing to re-write the codebase due to the above reasons</li>
+<li>Corrupting the database of the server when running code unserialized</li>
+</ul>
+<p>But that did cause me to learn how to do command serialization is SQLite, the importance of git and things like the CRUD (Create, Read, Update, Delete) functionalities that all endpoints can have and how to process them (even though the data for this project’s servers are not updated or deleted with the use of an API), how to use branches for early update versions when coding a program and how to implement authorisation in an endpoint.</p><p>Implementing the multiple modules and choosing how to split different functions between files and making them relevant has been the most fun part of designing and coding this project. Thankfully, a class that I was taking this semester taught me how to develop piece by piece a software from the start with creating schemas with functionalities of what i want it to do. </p><p>The documentation of the program can be found in the root of the repository of the project in a file called Documentation.md</p><p>The project is using servers, queries, databases and endpoints which have or will have a vulnerability somewhere in the future that is why I am using Snyk.io to detect vulnerabilities, suggest fixed and give us a score of how harmfull it is.</p><p>It should be mentioned that fixes to vulnerabilities have no certain timeline on which they may have a patch released.</p><p>Thanks a lot for reading!</p><ul>
+<li>Stefanos M.</li>
+</ul>
+
             ]]>
         </content>
     </entry>
