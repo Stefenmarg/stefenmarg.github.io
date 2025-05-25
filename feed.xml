@@ -3,7 +3,7 @@
     <title>Stefenmarg</title>
     <link href="https://stefenmarg.github.io/feed.xml" rel="self" />
     <link href="https://stefenmarg.github.io" />
-    <updated>2025-05-25T21:47:16+03:00</updated>
+    <updated>2025-05-25T21:55:29+03:00</updated>
     <author>
         <name>Stefanos M.</name>
     </author>
@@ -70,13 +70,13 @@
         <updated>2025-01-30T12:00:00+02:00</updated>
             <summary>
                 <![CDATA[
-                    Lab caterogy: Thread Intel Lab can be found [here].(https://cyberdefenders.org/blueteam-ctf-challenges/icedid/) For this lab we were given the following scenario: A cyber threat group was identified for initiating widespread phishing campaigns to distribute further malicious payloads. The most frequently encountered payloads were IcedID. You have been given&hellip;
+                    Lab caterogy: Thread Intel Lab can be found here. For this lab we were given the following scenario: A cyber threat group was identified for initiating widespread phishing campaigns to distribute further malicious payloads. The most frequently encountered payloads were IcedID. You have been given&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h4 id="lab-caterogy-thread-intel">Lab caterogy: Thread Intel</h4>
-<p>Lab can be found [here].(<a href="https://cyberdefenders.org/blueteam-ctf-challenges/icedid/">https://cyberdefenders.org/blueteam-ctf-challenges/icedid/</a>)</p><p>For this lab we were given the following scenario:</p><blockquote>
+<p>Lab can be found <a href="https://cyberdefenders.org/blueteam-ctf-challenges/icedid/">here.</a></p><p>For this lab we were given the following scenario:</p><blockquote>
 <p>A cyber threat group was identified for initiating widespread phishing campaigns to distribute further malicious payloads. The most frequently encountered payloads were IcedID. You have been given a hash of an IcedID sample to analyze and monitor the activities of this advanced persistent threat (APT) group.</p></blockquote>
 <p>So the task that we were given would be: to investigate a hash and from that to get requests, registrars, document names an function names. The tools that I used were:  </p><p><a href="https://virustotal.com/gui/home/upload">VirusTotal</a>, 
 <a href="https://who.is/">Who.is</a> 
@@ -115,13 +115,13 @@
         <updated>2025-01-28T12:00:00+02:00</updated>
             <summary>
                 <![CDATA[
-                    Lab caterogy: Thread Intel Lab can be found [here].(https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/) For this lab we were given the following scenario: You are part of the Threat Intelligence team in the SOC (Security Operations Center). An executable file has been discovered on a colleague’s computer, and it’s suspected&hellip;
+                    Lab caterogy: Thread Intel Lab can be found here. For this lab we were given the following scenario: You are part of the Threat Intelligence team in the SOC (Security Operations Center). An executable file has been discovered on a colleague’s computer, and it’s suspected&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h4 id="lab-caterogy-thread-intel">Lab caterogy: Thread Intel</h4>
-<p>Lab can be found [here].(<a href="https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/">https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/</a>)</p><p>For this lab we were given the following scenario:</p><blockquote>
+<p>Lab can be found <a href="https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/">here.</a></p><p>For this lab we were given the following scenario:</p><blockquote>
 <p>You are part of the Threat Intelligence team in the SOC (Security Operations Center). An executable file has been discovered on a colleague’s computer, and it’s suspected to be linked to a Command and Control (C2) server, indicating a potential malware infection.</p></blockquote>
 <p>Our task is to investigate the executable file by using it’s hash that was given to us in a text file within the downloadable lab file archive.</p><p>With this has we can simply go to <a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a> and in the search tab paste they hash given.</p><h5 id="q1-categorizing-malware-enables-a-quicker-and-easier-understanding-of-its-distinct-behaviors-and-attack-vectors-what-is-the-category-of-the-identified-malware">Q1: Categorizing malware enables a quicker and easier understanding of its distinct behaviors and attack vectors. What is the category of the identified malware?</h5>
 <p>This question is simple since all we have to do for this question is take the hash provided by the course that is extracted from the archive and submit it in the search tab as seen above in the VirusTotal platform. After that we will be seeing below 
