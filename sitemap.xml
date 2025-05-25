@@ -6,7 +6,19 @@
 </url>
 <url>
 <loc>https://stefenmarg.github.io/about-me/</loc>
-<lastmod>2025-05-22T22:32:42+03:00</lastmod>
+<lastmod>2025-05-25T22:28:38+03:00</lastmod>
+<image:image>
+<image:loc>https://stefenmarg.github.io/media/posts/2/gallery/1748200736489-610c8707-e5af-47f6-85e3-843fee47dc49_1-2-thumbnail.jpg</image:loc>
+<image:title><![CDATA[Image of my resume.]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://stefenmarg.github.io/media/posts/2/gallery/1748200663527-2f135740-1fb1-4d1f-8d41-9245252b17f8_1-2-thumbnail.jpg</image:loc>
+<image:title><![CDATA[Image of a certificate given to me by TryHackMe proving my knowledge of Cybersecurity fundementals.]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://stefenmarg.github.io/media/posts/2/gallery/1748200773838-a16f149c-2895-494a-aadc-0140f0d23424_1-2-thumbnail.jpg</image:loc>
+<image:title><![CDATA[Image of a certificate given to me by Matlab for completing the Matlab Fundamentals Course.]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://stefenmarg.github.io/advent-of-cyber-2024/</loc>
